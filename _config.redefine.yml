@@ -25,9 +25,9 @@ info:
 # 文档: https://redefine-docs.ohevan.com/basic/defaults
 defaults:
   # 网站图标（Favicon）
-  favicon: source/img/log.ico
+  favicon: https://youke2.picui.cn/s1/2025/12/22/69487018d79ad.ico
   # 站点 Logo
-  logo: source/img/log.png
+  logo: https://s2.loli.net/2025/12/22/BF6ApZlzjyELX5K.png
   # 站点头像
   avatar: https://s2.loli.net/2025/12/22/mkWtIYraVxdnTCe.jpg
 # 图片配置 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 结束
@@ -206,9 +206,6 @@ navbar:
     Home: 
       path: / 
       icon: fa-regular fa-house # 可留空
-    Archives: 
-      path: /archives 
-      icon: fa-regular fa-archive # 可留空
     Tag:
       path: /tags/ 
       icon: fa-solid fa-tags
@@ -221,9 +218,6 @@ navbar:
     # Status: 
     #   path: https://status.ohevan.com/
     #   icon: fa-regular fa-chart-bar
-    Friends: #取名随意
-        icon: fa-solid fa-link #图标
-        path: /links/
     About: 
       icon: fa-regular fa-user
       submenus:
@@ -232,6 +226,12 @@ navbar:
         BiliBili: https://github.com/RE-TikaRa
         相册: #取名随意
           path: /masonry/ 
+        Archives: 
+          path: /archives 
+        Friends: #取名随意
+          path: /links/
+        Bookmarks: #取名随意
+          path: /bookmarks/
     #     Blog: https://ohevan.com
     #     Friends: /friends
     # Links: 
