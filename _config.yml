@@ -101,10 +101,10 @@ theme: redefine
 # 部署
 ## 文档: https://hexo.io/docs/one-command-deployment
 deploy:  
-type: git  
-repo: git@github.com:RE-TikaRa/RE-TikaRa.github.io.git
-branch: main  
-message: blog file  
+  type: git  
+  repo: git@github.com:RE-TikaRa/RE-TikaRa.github.io.git
+  branch: main  
+  message: blog file  
 
 # abbrlink 配置
 abbrlink:
@@ -133,8 +133,3 @@ encrypt: # 使用 hexo-blog-encrypt 插件
   - {name: tagName, password: 密码B}
   wrong_pass_message: 抱歉, 这个密码看着不太对, 请再试试.
   wrong_hash_message: 抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.
-
-easy_tags_plugin:
-  enable: true
-  tag_name_case: 1
-  sort_ignore_case: true
