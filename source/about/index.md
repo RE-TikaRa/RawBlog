@@ -1,19 +1,24 @@
 ---
 title: 关于
-date: 2025-12-22 05:16:47
+date: 2025-12-22 05:16:15
 ---
 
 ## 你好，我是 亓翎_Re-TikaRa
 
-一只喜欢在奇怪地方诞生的人造生命，欢迎戳戳。
+一只喜欢在奇怪地方诞生的人造生命，欢迎戳戳
+~~我应该不会跳起来咬你一口~~。
 
-我平时主要在 Windows 上写一些「自己真的用得上」的小工具：桌面应用、自动化脚本、以及偶尔的汉化/修补；对 UI 的 1px 也会很敏感。
+我平时主要在 Windows 上写一些小工具，很喜欢为了节省5分钟的活去写五六个小时的工具（目移）
+
+<div style="width:70%;margin:48px auto;display:flex;align-items:center;justify-content:center;"><span style="flex:1;height:2px;background:linear-gradient(90deg,transparent,#b8a998 20%,#afa89f 50%,#b8a998 80%,transparent);opacity:0.5;"></span><span style="margin:0 10px;font-size:16px;color:#c9bfb3;">◆</span><span style="margin:0 20px;font-size:24px;color:#b8a998;">❖</span><span style="margin:0 10px;font-size:16px;color:#c9bfb3;">◆</span><span style="flex:1;height:2px;background:linear-gradient(90deg,transparent,#b8a998 20%,#afa89f 50%,#b8a998 80%,transparent);opacity:0.5;"></span></div>
 
 ## 这个博客写什么
 
-- 工具与桌面体验：从想法到落地的小记录
-- 学习与踩坑：配置、依赖、部署、以及复盘
-- 偶尔碎碎念：一些不太严肃但真实的想法
+- 一些学习记录
+- 一些知识
+- 一些奇奇怪怪的碎碎念
+
+<div style="width:70%;margin:48px auto;display:flex;align-items:center;justify-content:center;"><span style="flex:1;height:2px;background:linear-gradient(90deg,transparent,#b8a998 20%,#afa89f 50%,#b8a998 80%,transparent);opacity:0.5;"></span><span style="margin:0 10px;font-size:16px;color:#c9bfb3;">◆</span><span style="margin:0 20px;font-size:24px;color:#b8a998;">❖</span><span style="margin:0 10px;font-size:16px;color:#c9bfb3;">◆</span><span style="flex:1;height:2px;background:linear-gradient(90deg,transparent,#b8a998 20%,#afa89f 50%,#b8a998 80%,transparent);opacity:0.5;"></span></div>
 
 ## 一些公开项目
 
@@ -25,10 +30,13 @@ date: 2025-12-22 05:16:47
 - [Paste-Into-File-CHS](https://github.com/RE-TikaRa/Paste-Into-File-CHS)：剪贴板内容写入文件的小工具（汉化版）
 - [MOOC-Exam-Analyzer](https://github.com/RE-TikaRa/MOOC-Exam-Analyzer)：MOOC 考试分析工具
 
+<div style="width:70%;margin:48px auto;display:flex;align-items:center;justify-content:center;"><span style="flex:1;height:2px;background:linear-gradient(90deg,transparent,#b8a998 20%,#afa89f 50%,#b8a998 80%,transparent);opacity:0.5;"></span><span style="margin:0 10px;font-size:16px;color:#c9bfb3;">◆</span><span style="margin:0 20px;font-size:24px;color:#b8a998;">❖</span><span style="margin:0 10px;font-size:16px;color:#c9bfb3;">◆</span><span style="flex:1;height:2px;background:linear-gradient(90deg,transparent,#b8a998 20%,#afa89f 50%,#b8a998 80%,transparent);opacity:0.5;"></span></div>
+
 ## 在哪里找到我
 
 - 主页：[re-tikara.fun](https://re-tikara.fun)
 - GitHub：[@RE-TikaRa](https://github.com/RE-TikaRa)
-- Bilibili：[25808128](https://space.bilibili.com/25808128)
+- Bilibili：[亓翎_Re-TikaRa](https://space.bilibili.com/374412219)
+- Email：[亓翎_Re-TikaRa](stumail@re-tikara.fun)
 
-如果你想交流/反馈，最推荐直接在 GitHub 开 issue；邮件的话也可以在 GitHub 主页里找到。
+其余更详细的点你可以在GitHub的主页中看到（包括但不限于各种联络方式，个人属性等等）
