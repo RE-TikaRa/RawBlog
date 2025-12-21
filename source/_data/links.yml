@@ -1,0 +1,8 @@
+- links_category: Normal
+  has_thumbnail: false
+  list:
+      - name: Zetaloop
+        link: https://github.com/zetaloop
+        description: 这是一只嗷嗷叫的狐狸
+        avatar: https://avatars.githubusercontent.com/u/36418285?v=4
+

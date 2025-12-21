@@ -1,0 +1,140 @@
+# Hexo 配置
+## 文档: https://hexo.io/docs/configuration.html
+## 源码: https://github.com/hexojs/hexo/
+
+# 站点
+title: ALp_Studio Article Library
+subtitle: 'ReStart Version'
+description: '重构的版本'
+keywords: 亓翎_Re-Tikara
+author: 亓翎_Re-Tikara
+language: zh-CN
+timezone: 'Asia/Shanghai'
+
+# URL
+## 在这里设置站点 URL。例如使用 GitHub Pages 时，把 url 设置为 'https://username.github.io/project'
+url: https://github.com/RE-TikaRa/RE-TikaRa.github.io
+permalink: posts/:abbrlink/ 
+permalink_defaults:
+pretty_urls:
+  trailing_index: false # 设为 false 以从永久链接中移除末尾的 'index.html'
+  trailing_html: false # 设为 false 以从永久链接中移除末尾的 '.html'
+
+# 目录
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# 写作
+new_post_name: :title.md # 新文章的文件名
+default_layout: post
+titlecase: false # 将标题转换为 Title Case
+external_link:
+  enable: true # 在新标签页打开外部链接
+  field: site # 应用于整个站点
+  exclude: ''
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+syntax_highlighter: highlight.js
+highlight:
+  line_number: true
+  auto_detect: false
+  tab_replace: ''
+  wrap: true
+  hljs: false
+prismjs:
+  preprocess: true
+  line_number: true
+  tab_replace: ''
+
+# 首页设置
+# path: 博客列表页的根路径（默认 = ''）
+# per_page: 每页显示的文章数（0 = 禁用分页）
+# order_by: 文章排序（默认按日期倒序）
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+
+# 分类与标签
+default_category: uncategorized
+category_map:
+tag_map:
+
+# 元数据元素
+## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
+meta_generator: true
+
+# 日期 / 时间格式
+## Hexo 使用 Moment.js 解析并显示日期
+## 你可以按如下文档定义自定义格式
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+## updated_option 支持 'mtime'、'date'、'empty'
+updated_option: 'mtime'
+
+# 分页
+## 将 per_page 设为 0 以禁用分页
+per_page: 10
+pagination_dir: page
+
+# 包含 / 排除文件
+## include:/exclude: 仅作用于 'source/' 目录
+include:
+exclude:
+ignore:
+
+# 扩展
+## 插件: https://hexo.io/plugins/
+## 主题: https://hexo.io/themes/
+theme: redefine
+
+# 部署
+## 文档: https://hexo.io/docs/one-command-deployment
+deploy:  
+type: git  
+repo: git@github.com:RE-TikaRa/RE-TikaRa.github.io.git
+branch: main  
+message: blog file  
+
+# abbrlink 配置
+abbrlink:
+  alg: crc32      # 用于计算 abbrlink 的算法。支持 crc16（默认）和 crc32
+  rep: hex        # URL 中 abbrlink 的表示形式。支持 dec（默认）和 hex
+  drafts: false   # 是否为草稿生成 abbrlink。（默认 false）
+  force: false    # 启用强制模式。此模式下插件会忽略缓存，即使文章已存在 abbrlink 也会为每篇文章重新计算。（默认 false）
+  writeback: true # 是否将对 front-matter 的更改写回到实际的 Markdown 文件。（默认 true）
+
+# 从目录树生成分类
+# 依赖：https://github.com/xu-song/hexo-auto-category
+# depth: 要生成的目录树最大层级，需大于 0
+# multiple: 是否允许多级分类层级
+auto_category:
+ enable: true
+ multiple: false
+ depth: 99999
+
+
+# 安全设置
+encrypt: # 使用 hexo-blog-encrypt 插件
+  abstract: 有东西被加密了, 请输入密码查看.
+  message: 您好, 这里需要密码.
+  tags:
+  - {name: tagName, password: 密码A}
+  - {name: tagName, password: 密码B}
+  wrong_pass_message: 抱歉, 这个密码看着不太对, 请再试试.
+  wrong_hash_message: 抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.
+
+easy_tags_plugin:
+  enable: true
+  tag_name_case: 1
+  sort_ignore_case: true
