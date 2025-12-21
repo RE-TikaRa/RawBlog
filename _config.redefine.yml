@@ -17,7 +17,7 @@ info:
   # 作者名称
   author: 亓翎_Re-Tikara
   # 站点 URL
-  url: https://re-tikara.fun
+  url: https://RE-TikaRa.github.io
 # 基础信息 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 结束
 
 
@@ -177,7 +177,7 @@ home_banner:
     # 链接列表
     links:
       github: https://github.com/RE-TikaRa
-      BiliBili: https://space.bilibili.com/374412219
+      bilibili: https://space.bilibili.com/374412219
       email: 163mail@re-tikara.fun # 你的邮箱
       # ...... # 你可以继续添加更多
     # 带二维码抽屉的社交链接
@@ -223,15 +223,11 @@ navbar:
       submenus:
         Me: /about
         Github: https://github.com/RE-TikaRa
-        BiliBili: https://github.com/RE-TikaRa
-        相册: #取名随意
-          path: /masonry/ 
-        Archives: 
-          path: /archives 
-        Friends: #取名随意
-          path: /links/
-        Bookmarks: #取名随意
-          path: /bookmarks/
+        BiliBili: https://space.bilibili.com/374412219
+        相册: /masonry
+        Archives: /archives
+        Friends: /links
+        Bookmarks: /bookmarks
     #     Blog: https://ohevan.com
     #     Friends: /friends
     # Links: 

@@ -13,7 +13,7 @@ timezone: 'Asia/Shanghai'
 
 # URL
 ## 在这里设置站点 URL。例如使用 GitHub Pages 时，把 url 设置为 'https://username.github.io/project'
-url: https://github.com/RE-TikaRa/RE-TikaRa.github.io
+url: https://RE-TikaRa.github.io
 permalink: posts/:abbrlink/ 
 permalink_defaults:
 pretty_urls:
