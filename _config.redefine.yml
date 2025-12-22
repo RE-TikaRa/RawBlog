@@ -52,19 +52,19 @@ global:
   fonts:
     # 中文字体
     chinese: 
-      enable: false # 是否启用自定义中文字体
-      family:  # 字体族（Font family）
-      url:  # 字体 CSS 文件 URL
+      enable: true # 是否启用自定义中文字体
+      family: "\"Noto Serif SC\", \"Songti SC\", \"STSong\", \"SimSun\", serif" # 字体族（Font family）
+      url: "https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&display=swap" # 字体 CSS 文件 URL
     # 英文字体
     english: 
-      enable: false # 是否启用自定义英文字体
-      family:  # 字体族（Font family）
-      url:  # 字体 CSS 文件 URL
+      enable: true # 是否启用自定义英文字体
+      family: "\"Noto Serif SC\", \"Noto Serif\", serif" # 字体族（Font family）
+      url: "https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&display=swap" # 字体 CSS 文件 URL
     # 自定义标题字体（导航栏、侧边栏）
     title:
-      enable: false # 是否启用自定义标题字体
-      family:  # 字体族（Font family）
-      url:  # 字体 CSS 文件 URL
+      enable: true # 是否启用自定义标题字体
+      family: "\"Noto Serif SC\", \"Songti SC\", \"STSong\", \"SimSun\", serif" # 字体族（Font family）
+      url: "https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&display=swap" # 字体 CSS 文件 URL
   # 内容最大宽度
   content_max_width: 1000px
   # 侧边栏宽度
