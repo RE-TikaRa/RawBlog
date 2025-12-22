@@ -13,7 +13,8 @@ timezone: 'Asia/Shanghai'
 
 # URL
 ## 在这里设置站点 URL。例如使用 GitHub Pages 时，把 url 设置为 'https://username.github.io/project'
-url: https://RE-TikaRa.github.io
+url: https://re
+root: /Blog/
 permalink: posts/:abbrlink/ 
 permalink_defaults:
 pretty_urls:
@@ -102,7 +103,7 @@ theme: redefine
 ## 文档: https://hexo.io/docs/one-command-deployment
 deploy:  
   type: git  
-  repo: git@github.com:RE-TikaRa/RE-TikaRa.github.io.git
+  repo: git@github.com:RE-TikaRa/Blog.git
   branch: main  
   message: blog file  
 
