@@ -140,7 +140,7 @@ home_banner:
     text: ["欢迎进入，实验体","情感数据记录中……"] # 副标题文本（数组）
     hitokoto:  # 一言配置
       enable: true # 是否启用一言
-      show_author: true # 是否显示作者
+      show_author: false # 是否显示作者
       api: https://v1.hitokoto.cn # API URL，可追加 types 参数，见 https://developer.hitokoto.cn/sentence/#%E5%8F%A5%E5%AD%90%E7%B1%BB%E5%9E%8B-%E5%8F%82%E6%95%B0
     typing_speed: 100 # 打字速度（ms）
     backing_speed: 80 # 回退速度（ms）
