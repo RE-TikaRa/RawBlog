@@ -19,32 +19,46 @@ sticky:
 ---
 
 ## 前言
-LaTeX 是基于 TeX 的排版系统，用纯文本加命令写作，排版更统一，避免反复调样式。它会编译成高质量 PDF，尤其适合公式、参考文献和长文档，也便于后期统一调整格式。写作时可以更专注内容，把样式交给工具处理。本次我们将使用 [Tectonic](https://tectonic-typesetting.github.io/en-US/) 这个 LaTeX 引擎，加上 LaTeX Workshop 这个 VS Code 插件来学习使用。
+LaTeX 是基于 TeX 的排版系统，用纯文本加命令写作，排版统一且可复用。它会编译为高质量 PDF，尤其适合公式、参考文献和长文档，也便于后期统一调整格式。写作时可更专注内容，把样式交给工具处理。本文记录在 Windows 11 上使用 Tectonic + VS Code + LaTeX Workshop 的前期准备流程。
+
+<div style="width:70%;margin:48px auto;display:flex;align-items:center;justify-content:center;"><span style="flex:1;height:2px;background:linear-gradient(90deg,transparent,#b8a998 20%,#afa89f 50%,#b8a998 80%,transparent);opacity:0.5;"></span><span style="margin:0 10px;font-size:16px;color:#c9bfb3;">◆</span><span style="margin:0 20px;font-size:24px;color:#b8a998;">❖</span><span style="margin:0 10px;font-size:16px;color:#c9bfb3;">◆</span><span style="flex:1;height:2px;background:linear-gradient(90deg,transparent,#b8a998 20%,#afa89f 50%,#b8a998 80%,transparent);opacity:0.5;"></span></div>
+
+## 准备清单
+- Tectonic（LaTeX 引擎）
+- VS Code
+- LaTeX Workshop 插件
+- 环境变量 Path（用于命令行调用）
 
 <div style="width:70%;margin:48px auto;display:flex;align-items:center;justify-content:center;"><span style="flex:1;height:2px;background:linear-gradient(90deg,transparent,#b8a998 20%,#afa89f 50%,#b8a998 80%,transparent);opacity:0.5;"></span><span style="margin:0 10px;font-size:16px;color:#c9bfb3;">◆</span><span style="margin:0 20px;font-size:24px;color:#b8a998;">❖</span><span style="margin:0 10px;font-size:16px;color:#c9bfb3;">◆</span><span style="flex:1;height:2px;background:linear-gradient(90deg,transparent,#b8a998 20%,#afa89f 50%,#b8a998 80%,transparent);opacity:0.5;"></span></div>
 
 ## 安装 Tectonic
-打开 [Tectonic](https://tectonic-typesetting.github.io/en-US/) 的官网，点击 `Install Tectonic 0.15.0`，进入下载安装页面。
+1. 打开 [Tectonic](https://tectonic-typesetting.github.io/en-US/) 官网，点击 `Install Tectonic 0.15.0` 进入安装页面。
 
 ![image-20251228011823010](https://s2.loli.net/2025/12/28/3elv2oatsxZgmYb.png)
 
-它会自行判断你的电脑环境，给出相应的下载方式，不过我更推荐在 `GitHub` 页面下载。点击 [find the latest released binaries on GitHub](https://github.com/tectonic-typesetting/tectonic/releases/tag/tectonic@0.15.0) 进入 GitHub 发行页。
+2. 我更推荐在 GitHub Release 下载。点击 [find the latest released binaries on GitHub](https://github.com/tectonic-typesetting/tectonic/releases/tag/tectonic@0.15.0) 进入发行页。
 
 ![image-20251228012511285](https://s2.loli.net/2025/12/28/4PCzItrV68sagBY.png)
 
-打开发布页后，往下翻找到 `Assets`。
+3. 在发布页找到 `Assets`。
 
 ![Assets](https://s2.loli.net/2025/12/28/Rn1QDBi3Cj2LNyg.png)
 
-如果电脑环境是 Windows 11 x64（Ryzen 9），那么选择 [tectonic-0.15.0-x86_64-pc-windows-msvc.zip](https://github.com/tectonic-typesetting/tectonic/releases/download/tectonic@0.15.0/tectonic-0.15.0-x86_64-pc-windows-msvc.zip) 是最佳选择。MSVC 版本是官方 Windows 原生构建，兼容性最好。点击后会下载一个压缩包，内容如下图：
+4. Windows 11 x64 建议下载 `tectonic-0.15.0-x86_64-pc-windows-msvc.zip`（官方 MSVC 原生构建，兼容性最好）。
 
 ![image-20251228013233070](https://s2.loli.net/2025/12/28/WU738GftNuLdqkF.png)
 
-把这个文件放在一个自己能清楚记住的位置，我放在了 `C:\Tectonic`，即在 C 盘下创建一个 Tectonic 文件夹来存放这个 exe。然后把这个路径加入环境变量。
+5. 解压后将 `tectonic.exe` 放到固定路径，例如 `C:\Tectonic`。
+6. 把该路径加入系统环境变量 `Path`。
 
 ![image-20251228014324129](https://s2.loli.net/2025/12/28/ReU58Z6z7FwsTuC.png)
 
-至此 Tectonic 引擎就配置好了，但只有引擎还不够。我们需要 VS Code 和 LaTeX Workshop 来使用它。打开 VS Code 的扩展，搜索并安装 LaTeX Workshop 插件。
+7. （可选）命令行验证：`tectonic --version`。
+
+<div style="width:70%;margin:48px auto;display:flex;align-items:center;justify-content:center;"><span style="flex:1;height:2px;background:linear-gradient(90deg,transparent,#b8a998 20%,#afa89f 50%,#b8a998 80%,transparent);opacity:0.5;"></span><span style="margin:0 10px;font-size:16px;color:#c9bfb3;">◆</span><span style="margin:0 20px;font-size:24px;color:#b8a998;">❖</span><span style="margin:0 10px;font-size:16px;color:#c9bfb3;">◆</span><span style="flex:1;height:2px;background:linear-gradient(90deg,transparent,#b8a998 20%,#afa89f 50%,#b8a998 80%,transparent);opacity:0.5;"></span></div>
+
+## 安装 VS Code 与 LaTeX Workshop
+在 VS Code 扩展中搜索并安装 LaTeX Workshop 插件。
 
 ![image-20251228014633517](https://s2.loli.net/2025/12/28/zbS2J97xGIoYdMc.png)
 
@@ -52,40 +66,43 @@ LaTeX 是基于 TeX 的排版系统，用纯文本加命令写作，排版更统
 
 ![image-20251228020954286](https://s2.loli.net/2025/12/28/W5dylr1eZMQqfvH.png)
 
-找到下面类似的配置，没有的话可以直接复制我的，再按需调整。注意 JSON 语法，不确定就发给 AI，让它帮你检查。
+<div style="width:70%;margin:48px auto;display:flex;align-items:center;justify-content:center;"><span style="flex:1;height:2px;background:linear-gradient(90deg,transparent,#b8a998 20%,#afa89f 50%,#b8a998 80%,transparent);opacity:0.5;"></span><span style="margin:0 10px;font-size:16px;color:#c9bfb3;">◆</span><span style="margin:0 20px;font-size:24px;color:#b8a998;">❖</span><span style="margin:0 10px;font-size:16px;color:#c9bfb3;">◆</span><span style="flex:1;height:2px;background:linear-gradient(90deg,transparent,#b8a998 20%,#afa89f 50%,#b8a998 80%,transparent);opacity:0.5;"></span></div>
+
+## 配置 LaTeX Workshop
+
+找到下面类似的配置，没有的话可以直接复制并按需调整。注意 JSON 语法，不确定就发给 AI 帮你检查。
 ```json
 {
-    "workbench.editorAssociations": {
-        "*.pdf": "latex-workshop-pdf-hook"
-    },
-    "latex-workshop.intellisense.biblatexJSON.replace": {},
-    "latex-workshop.latex.tools": [
-        {
-            "name": "tectonic",
-            "command": "tectonic",
-            "args": [
-                "--synctex",
-                "--keep-logs",
-                "--print",
-                "%DOC%.tex"
-            ],
-            "env": {}
-        }
-    ],
-    "latex-workshop.latex.recipes": [
-        {
-            "name": "tectonic",
-            "tools": [
-                "tectonic"            ]
-        }
-    ],
-    "latex-workshop.view.pdf.internal.synctex.keybinding": "double-click",
-    "[latex]": {
-        "editor.formatOnSave": false
-    },
-    "latex-workshop.latex.autoBuild.run": "onSave",
-    "latex-workshop.latex.autoBuild.interval": 500
+  "workbench.editorAssociations": {
+    "*.pdf": "latex-workshop-pdf-hook"
+  },
+  "latex-workshop.intellisense.biblatexJSON.replace": {},
+  "latex-workshop.latex.tools": [
+    {
+      "name": "tectonic",
+      "command": "tectonic",
+      "args": [
+        "--synctex",
+        "--keep-logs",
+        "--print",
+        "%DOC%.tex"
+      ],
+      "env": {}
+    }
+  ],
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "tectonic",
+      "tools": ["tectonic"]
+    }
+  ],
+  "latex-workshop.view.pdf.internal.synctex.keybinding": "double-click",
+  "[latex]": {
+    "editor.formatOnSave": false
+  },
+  "latex-workshop.latex.autoBuild.run": "onSave",
+  "latex-workshop.latex.autoBuild.interval": 500
 }
 ```
 
-到此设置就完成了。欢迎来到 LaTeX 的规范化世界。
+完成后保存即可。之后保存 `.tex` 文件会自动调用 Tectonic 编译，并在 VS Code 内部预览 PDF。
