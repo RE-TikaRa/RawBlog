@@ -1,18 +1,19 @@
 ---
 title: LaTeX学习日志01-前期准备
-thumbnail: https://s2.loli.net/2025/12/22/nBapAxK8NowjZFP.png
+thumbnail: 'https://s2.loli.net/2025/12/22/nBapAxK8NowjZFP.png'
 excerpt: LaTeX学习日志01-前期准备 包括安装，环境配置等
-banner: https://s2.loli.net/2025/12/22/uBnZDzxcI7JHCX3.png
+banner: 'https://s2.loli.net/2025/12/22/uBnZDzxcI7JHCX3.png'
 password: ''
-abstract: 有东西被加密了, 请输入密码查看.
-message: 您好, 这里需要密码.
-wrong_pass_message: 抱歉, 这个密码看着不太对, 请再试试.
-wrong_hash_message: 抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.
-date: 2025-12-27 07:54:10
-expires: 10000-01-01 07:59:59
+abstract: '有东西被加密了, 请输入密码查看.'
+message: '您好, 这里需要密码.'
+wrong_pass_message: '抱歉, 这个密码看着不太对, 请再试试.'
+wrong_hash_message: '抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.'
+expires: '10000-01-01 07:59:59'
 tags:
- - LaTeX
+  - LaTeX
 categories:
+  - Latex
+date: 2025-12-27 07:54:10
 sticky:
 ---
 
