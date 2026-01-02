@@ -16,41 +16,12 @@ tags:
 sticky:
 ---
 <div align="center">
-  <!-- Logo Section -->
-  <img src="https://raw.githubusercontent.com/RE-TikaRa/Certificate-Management/main/img/LOGO.svg" alt="Logo" width="180" />
-  <img src="https://raw.githubusercontent.com/RE-TikaRa/Certificate-Management/main/img/NewLogo.svg" alt="Logo" width="180" />
-
   <!-- Typing Effect Title -->
   <h1>荣誉证书管理系统</h1>
-
-
   <p>
     一款功能完整、界面精美的荣誉证书管理桌面应用。<br/>
     支持荣誉证书的全生命周期管理：从录入、统计分析、成员管理到附件管理，一应俱全。<br/>
     <b>当前版本：</b> v1.4.0（2025-12-18）
-  </p>
-
-  <!-- Badges -->
-  <p>
-    <img src="https://img.shields.io/badge/Python-3.14+-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-    <img src="https://img.shields.io/badge/PySide6-Latest-41CD52?style=for-the-badge&logo=qt&logoColor=white" />
-    <img src="https://img.shields.io/badge/License-MIT-orange?style=for-the-badge" />
-    <img src="https://img.shields.io/badge/Platform-Win%20%7C%20Mac%20%7C%20Linux-lightgrey?style=for-the-badge&logo=linux&logoColor=black" />
-  </p>
-
-  <!-- Action Buttons -->
-  <p>
-    <a href="#-快速开始">
-      <img src="https://img.shields.io/badge/🚀_立即运行-Start_Demo-blue?style=flat-square" alt="Start Demo" />
-    </a>
-    &nbsp;
-    <a href="https://github.com/RE-TikaRa/Certificate-Management/issues">
-      <img src="https://img.shields.io/badge/🐛_反馈问题-Report_Bug-red?style=flat-square" alt="Report Bug" />
-    </a>
-    &nbsp;
-    <a href="#-文件目录说明">
-      <img src="https://img.shields.io/badge/📚_浏览文档-Explore_Docs-green?style=flat-square" alt="Explore Docs" />
-    </a>
   </p>
 </div>
 
@@ -221,12 +192,6 @@ sticky:
 ---
 
 ## 🚀 快速开始
-
-<div align="center">
-  <img src="https://img.shields.io/badge/Python-3.14+-3776AB?style=flat-square&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/UV-Package_Manager-purple?style=flat-square" />
-  <img src="https://img.shields.io/badge/SQLite-Database-003B57?style=flat-square&logo=sqlite&logoColor=white" />
-</div>
 
 ### 📥 安装步骤
 
