@@ -134,3 +134,10 @@ encrypt: # 使用 hexo-blog-encrypt 插件
   - {name: tagName, password: 密码B}
   wrong_pass_message: 抱歉, 这个密码看着不太对, 请再试试.
   wrong_hash_message: 抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.
+
+feed:
+  type: rss2
+  path: rss2.xml
+  limit: 10
+  content: false
+  order_by: -date
