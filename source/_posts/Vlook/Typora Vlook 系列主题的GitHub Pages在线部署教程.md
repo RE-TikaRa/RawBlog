@@ -14,17 +14,20 @@ tags:
   - Vlook
 categories:
   - Vlook
+abbrlink: 8443937e
 date: 2026-02-10 00:58:09
 sticky:
 ---
 
 ## 写在前面
 
-> [!note]
->
-> 本文以 **VLOOK V2026.1** 为例。  
->
-> 全文中的 `<yourhost>` 均表示你的站点地址。开始前请先确认站点类型，再进行替换。
+{% notel blue NOTE %}
+
+本文以 **VLOOK V2026.1** 为例。  
+
+全文中的 `<yourhost>` 均表示你的站点地址。开始前请先确认站点类型，再进行替换。
+
+{% endnotel %}
 
 1. **自定义域名（根域）**：若将 `username.github.io` 绑定到 `custom.com`，则 `<yourhost>` 填写为 `custom.com`（不是 GitHub 原始域名）。
 2. **自定义域名（项目路径）**：若站点地址为 `username.github.io/仓库名`，则 `<yourhost>` 填写为 `custom.com/仓库名`。
@@ -43,9 +46,9 @@ sticky:
 2. 将主题文件中的 `<yourhost>` 替换为你的实际站点地址（例如 `custom.com`）。
 3. 把修改后的主题复制到 Typora 的主题目录。
 
-![Theme](pic\Theme.png)
+![Theme.png](https://free.picui.cn/free/2026/02/10/698a2f57269f6.png)
 
-![ThemeFolder.png](pic/ThemeFolder.png)
+![ThemeFolder.png](https://free.picui.cn/free/2026/02/10/698a2f571827a.png)
 
 ### 2) 导出设置
 
@@ -53,9 +56,9 @@ sticky:
 2. 使用 VS Code 或其他文本编辑器，将 `<yourhost>` 替换为你的实际站点地址（例如 `custom.com`）。
 3. 按照 Vlook-live 的说明将配置导入 Typora，并选择你刚刚修改的主题。
 
-![plugin-live.txt](pic\plugin-live.txt.png)
+![plugin-live.txt.png](https://free.picui.cn/free/2026/02/10/698a2f5724b47.png)
 
-![Vlook-Live](pic\Vlook-Live.png)
+![Vlook-Live.png](https://free.picui.cn/free/2026/02/10/698a2f5a63e83.png)
 
 ---
 
@@ -67,7 +70,7 @@ sticky:
 2. 将这两个 `V2026.1` 文件夹复制到站点根目录。
 3. 将这些文件夹内 **所有 CSS 文件** 的 `<yourhost>` 统一替换为你的实际站点地址（例如 `custom.com`）。
 
-![css](pic/css.png)
+![css.png](https://free.picui.cn/free/2026/02/10/698a2f56ac0cb.png)
 
 ### 2) 配置字体文件
 
@@ -75,7 +78,7 @@ sticky:
 2. 下载字体包：[点击下载](https://github.com/MadMaxChow/openfonts/releases/download/V2.0/web-font-V2.0.tar.gz)。
 3. 解压后将其中的 `s` 和 `v` 两个文件夹复制到 `fonts` 目录下。
 
-![fonts](pic/fonts.png)
+![fonts.png](https://free.picui.cn/free/2026/02/10/698a2f56e7926.png)
 
 ---
 
