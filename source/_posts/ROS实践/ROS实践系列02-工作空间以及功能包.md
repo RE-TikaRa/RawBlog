@@ -19,20 +19,20 @@ sticky:
 
 # 工作空间
 
-工作空间（WorkSpace)是一个**文件夹结构**，用于**组织、构建和管理 ROS 项目中的软件包**。每个工作空间可以包含多个独立的包（packages），这些包之间可以相互依赖。它是 ROS 开发的基础环境，类似于其他编程语言中的“项目目录”。而在本次比赛中，我们将使用**Catkin 工作空间**（基于 CMake 构建系统）。具体项目结构可以参考下图：
+工作空间（WorkSpace)是一个 **文件夹结构** ，用于 **组织、构建和管理 ROS 项目中的软件包** 。每个工作空间可以包含多个独立的包（packages），这些包之间可以相互依赖。它是 ROS 开发的基础环境，类似于其他编程语言中的“项目目录”。而在本次比赛中，我们将使用 **Catkin 工作空间** （基于 CMake 构建系统）。具体项目结构可以参考下图：
 
 ![catkin workspace](https://s2.loli.net/2025/10/03/eDjJWv4KawdBFRo.png)
 
 {% note tip  %}
-注：`build/` 和 `devel/` 目录是在你首次运行 `catkin_make` 或 `catkin build` 命令后自动生成的，不需要手动创建。 
+注： `build/` 和 `devel/` 目录是在你首次运行 `catkin_make` 或 `catkin build` 命令后自动生成的，不需要手动创建。 
 {% endnote %}
 
 ## 优势
 
->   -   **标准化**：让所有开发者遵循统一的项目结构。
->   -   **模块化**：每个包独立，便于复用和管理。
->   -   **依赖管理**：通过 `package.xml` 管理包之间的依赖关系。
->   -   **构建自动化**：使用 `CMakeLists.txt` 和 Catkin 工具链自动编译代码。
+>   -   **标准化** ：让所有开发者遵循统一的项目结构。
+>   -   **模块化** ：每个包独立，便于复用和管理。
+>   -   **依赖管理** ：通过 `package.xml` 管理包之间的依赖关系。
+>   -   **构建自动化** ：使用 `CMakeLists.txt` 和 Catkin 工具链自动编译代码。
 
 ---
 # 工作空间常见文件与文件夹及其作用
@@ -41,34 +41,34 @@ sticky:
 
 ### `src/` —— 源码目录
 
-- **作用**：存放所有 ROS 包（packages）的源代码。
-- **内容**：
+- **作用** ：存放所有 ROS 包（packages）的源代码。
+- **内容** ：
   - 所有你自己创建或从别人那里克隆来的 ROS 包都放在这里。
-  - 包含 `CMakeLists.txt`、`package.xml` 等配置文件。
-  - 也包含 `.cpp`、`.py`、`.msg`、`.launch` 等实际代码文件。
+  - 包含 `CMakeLists.txt` 、 `package.xml` 等配置文件。
+  - 也包含 `.cpp` 、 `.py` 、 `.msg` 、 `.launch` 等实际代码文件。
 {% note warning  %}
-**注意**：不要手动修改 `build/` 和 `devel/`，它们是构建过程自动生成的。
+**注意** ：不要手动修改 `build/` 和 `devel/` ，它们是构建过程自动生成的。
 {% endnote %}
 
 
 ### `build/` —— 构建中间文件目录
 
-- **作用**：存放编译过程中生成的中间文件（如 Makefile、对象文件等）。
-- **特点**：
+- **作用** ：存放编译过程中生成的中间文件（如 Makefile、对象文件等）。
+- **特点** ：
   - 由 `catkin_make` 或 `catkin build` 自动生成。
   - 不需要你手动编辑或管理。
   - 可以安全删除后重新构建。
 
 ###  `devel/` —— 开发环境输出目录
 
-- **作用**：存放编译后的可执行文件、库文件、脚本以及环境设置文件。
+- **作用** ：存放编译后的可执行文件、库文件、脚本以及环境设置文件。
 
-- **关键文件**：
+- **关键文件** ：
   
-  - `setup.bash` / `setup.sh` / `setup.zsh` —— 设置当前终端环境变量（如 `ROS_PACKAGE_PATH`, `PYTHONPATH`），让系统能找到你刚编译的包。
+  - `setup.bash` / `setup.sh` / `setup.zsh` —— 设置当前终端环境变量（如 `ROS_PACKAGE_PATH` , `PYTHONPATH` ），让系统能找到你刚编译的包。
   
 {% note warning  %}
-**重要命令**：
+**重要命令** ：
 
 ```bash
 source devel/setup.bash
@@ -76,33 +76,33 @@ source devel/setup.bash
 这条命令必须在每次打开新终端后运行，才能使用你编译的包。
 {% endnote %}
 
-## 每个 ROS 包（如 `package2`）内部的常见结构
+## 每个 ROS 包（如 `package2` ）内部的常见结构
 
 ### CMakeLists.txt
 
-- **作用**：CMake 构建系统的配置文件，告诉编译器如何编译你的代码。
-- **内容包括**：
+- **作用** ：CMake 构建系统的配置文件，告诉编译器如何编译你的代码。
+- **内容包括** ：
   - 项目名称、版本
-  - 需要的依赖库（如 `roscpp`, ` rospy`）
-  - 编译哪些源文件（`.cpp`）
+  - 需要的依赖库（如 `roscpp` , ` rospy` ）
+  - 编译哪些源文件（ `.cpp` ）
   - 生成哪些可执行文件或库
 
 {% note tip  %}
-类似于 Python 的 `setup.py` 或 C++ 项目的 `Makefile`。
+类似于 Python 的 `setup.py` 或 C++ 项目的 `Makefile` 。
 {% endnote %}
 
 
 ### package.xml
 
-- **作用**：包的元数据描述文件，定义包的基本信息和依赖关系。
-- **内容包括**：
+- **作用** ：包的元数据描述文件，定义包的基本信息和依赖关系。
+- **内容包括** ：
   - 包名、版本、作者、许可证
-  - 运行时依赖（`<run_depend>`）
-  - 编译时依赖（`<build_depend>`）
+  - 运行时依赖（ `<run_depend>` ）
+  - 编译时依赖（ `<build_depend>` ）
   - 导出信息（如插件、消息类型等）
 
 {% note warning  %}
-✅ **必须存在**，否则 ROS 无法识别这个包。
+✅ **必须存在** ，否则 ROS 无法识别这个包。
 {% endnote %}
 
 {% note tip  %}
@@ -113,8 +113,8 @@ source devel/setup.bash
 ## 包内的功能子目录
 
 ### scripts/
-- **作用**：存放可直接运行的脚本文件（通常是 Python 或 Shell 脚本）。
-- **文件扩展名**：
+- **作用** ：存放可直接运行的脚本文件（通常是 Python 或 Shell 脚本）。
+- **文件扩展名** ：
   - `.py` —— Python 脚本（常用）
   - `.sh` —— Shell 脚本（用于启动程序、设置环境等）
 {% note tip  %}
@@ -128,9 +128,9 @@ chmod +x scripts/my_script.py
 
 ### msg/
 
-- **作用**：存放自定义的 **消息（Message）** 定义文件。
-- **文件扩展名**：`.msg`
-- **示例**：
+- **作用** ：存放自定义的 **消息（Message）** 定义文件。
+- **文件扩展名** ： `.msg`
+- **示例** ：
   ```plaintext
   # MyMessage.msg
   int32 id
@@ -146,10 +146,10 @@ chmod +x scripts/my_script.py
 
 ###  srv/
 
-- **作用**：存放自定义的 **服务（Service）** 定义文件。
-- **文件扩展名**：`.srv`
-- **结构**：分为请求（request）和响应（response）两部分。
-- **示例**：
+- **作用** ：存放自定义的 **服务（Service）** 定义文件。
+- **文件扩展名** ： `.srv`
+- **结构** ：分为请求（request）和响应（response）两部分。
+- **示例** ：
   ```plaintext
   # AddTwoInts.srv
   int32 a
@@ -165,8 +165,8 @@ chmod +x scripts/my_script.py
 
 ###  include/
 
-- **作用**：存放 C++ 头文件（`.h` 或 `.hpp`）。
-- **用途**：
+- **作用** ：存放 C++ 头文件（ `.h` 或 `.hpp` ）。
+- **用途** ：
   - 声明类、函数、常量等供其他 `.cpp` 文件引用。
   - 通常与 `src/` 目录配合使用。
 -  在 `CMakeLists.txt` 中通过 `include_directories()` 告诉编译器头文件位置。
@@ -174,8 +174,8 @@ chmod +x scripts/my_script.py
 
 ###  src/（包内的 src）
 
-- **作用**：存放 C++ 源代码文件（`.cpp`）。
-- **用途**：
+- **作用** ：存放 C++ 源代码文件（ `.cpp` ）。
+- **用途** ：
   - 实现节点的主要逻辑。
   - 通常会包含 `main()` 函数，作为可执行程序的入口。
 {% note warning  %}
@@ -185,10 +185,10 @@ chmod +x scripts/my_script.py
 
 ### launch/
 
-- **作用**：存放 **启动文件（Launch Files）**，用于一次性启动多个节点、设置参数、加载机器人模型等。
-- **文件扩展名**：`.launch`
-- **语言**：XML 格式。
-- **示例**：
+- **作用** ：存放 **启动文件（Launch Files）** ，用于一次性启动多个节点、设置参数、加载机器人模型等。
+- **文件扩展名** ： `.launch`
+- **语言** ：XML 格式。
+- **示例** ：
   
   ```xml
   <launch>
@@ -218,13 +218,13 @@ roslaunch my_package my_launch_file.launch
 | `msg/`           | 目录 | 自定义消息定义（.msg）                   |
 | `srv/`           | 目录 | 自定义服务定义（.srv）                   |
 | `include/`       | 目录 | C++ 头文件（.h）                         |
-| `src/`（包内）   | 目录 | C++ 源代码文件（.cpp）                   |
+| `src/` （包内）   | 目录 | C++ 源代码文件（.cpp）                   |
 | `launch/`        | 目录 | 启动文件（.launch），用于批量启动节点    |
 
 ## 后记
 
-- 所有这些文件和目录都是 **约定俗成的标准结构**，遵循它能让你的代码更容易被他人理解和复用。
-- 初学者建议先从官方教程（如 `ros_tutorials`）开始，观察标准包的结构。
+- 所有这些文件和目录都是 **约定俗成的标准结构** ，遵循它能让你的代码更容易被他人理解和复用。
+- 初学者建议先从官方教程（如 `ros_tutorials` ）开始，观察标准包的结构。
 - 使用 `catkin_create_pkg` 命令可以快速创建符合规范的新包：
   ```bash
   cd ~/catkin_ws/src
@@ -238,7 +238,7 @@ roslaunch my_package my_launch_file.launch
 
 ### 方法一：分层创建
 
-首先在系统主文件夹或任意一个你可以全局运行代码的路径下，使用`mkdir`来创建工程根目录，此处我以主文件夹下创建为例，在主文件夹下运行以下命令：
+首先在系统主文件夹或任意一个你可以全局运行代码的路径下，使用 `mkdir` 来创建工程根目录，此处我以主文件夹下创建为例，在主文件夹下运行以下命令：
 
 ```bash
 mkdir Tika_ws
@@ -252,7 +252,7 @@ mkdir Tika_ws
 cd Tika_ws
 ```
 
-进入之后我们创建存放ROS源代码的`src`文件夹
+进入之后我们创建存放ROS源代码的 `src` 文件夹
 
 ```bash
 mkdir src
@@ -262,7 +262,7 @@ mkdir src
 
 ### 方法二：多层一次创建
 
-首先在系统主文件夹或任意一个你可以全局运行代码的路径下，使用`mkdir`来创建工程根目录，此处我以主文件夹下创建为例，在主文件夹下运行以下命令：
+首先在系统主文件夹或任意一个你可以全局运行代码的路径下，使用 `mkdir` 来创建工程根目录，此处我以主文件夹下创建为例，在主文件夹下运行以下命令：
 
 ```bash
 mkdir -p Tika_ws/src
@@ -271,7 +271,7 @@ mkdir -p Tika_ws/src
 此时我们Tika_ws和src便可以一次创建
 
 {% note tip  %}
-多层建设必须要加入`-p`参数
+多层建设必须要加入 `-p` 参数
 {% endnote %}
 
 ---
@@ -290,7 +290,7 @@ catkin_init_workspace
 
 这个命令会：
 
--   在 `src/` 目录下生成一个 **`CMakeLists.txt` 文件**（实际上是一个指向 Catkin 系统 CMake 文件的符号链接）。
+-   在 `src/` 目录下生成一个 **`CMakeLists.txt` 文件** （实际上是一个指向 Catkin 系统 CMake 文件的符号链接）。
 -   这个 `CMakeLists.txt` 的作用是告诉 CMake：“这个目录下包含多个 ROS 包，请遍历所有子目录并构建它们”。
 
 >   生成的 `CMakeLists.txt` 内容类似于： 
@@ -303,7 +303,7 @@ catkin_init_workspace
 
 ## 补充
 
-从 **ROS Kinetic（2016 年）之后的版本开始**，`catkin_make` 命令已经**内置了自动初始化功能**。也就是说：
+从 **ROS Kinetic（2016 年）之后的版本开始** ， `catkin_make` 命令已经 **内置了自动初始化功能** 。也就是说：
 
 > **只需要这样做即可：**
 > 
@@ -314,10 +314,10 @@ catkin_init_workspace
 > ```
 > 
 
-`catkin_make` 会自动检测 `src/` 是否为空，并在必要时自动完成 `catkin_init_workspace` 的工作（即生成顶层 `CMakeLists.txt`）。
+`catkin_make` 会自动检测 `src/` 是否为空，并在必要时自动完成 `catkin_init_workspace` 的工作（即生成顶层 `CMakeLists.txt` ）。
 
 {% note warning  %}
-这样做的前提是：ROS 版本是 **Kinetic、Melodic 或 Noetic**（ROS Hydro / Indigo（较老版本不适用）；Kinetic 及以后可省略）
+这样做的前提是：ROS 版本是 **Kinetic、Melodic 或 Noetic** （ROS Hydro / Indigo（较老版本不适用）；Kinetic 及以后可省略）
 {% endnote %}
 
 ---
@@ -341,29 +341,29 @@ catkin_make
 
 ## 后续
 
-**使新构建的包生效**（每次打开新终端都需要）：
+**使新构建的包生效** （每次打开新终端都需要）：
    ```bash
    source devel/setup.bash
    ```
 
 ## **常用选项**
 
-- **只编译某个特定包**：
+- **只编译某个特定包** ：
   ```bash
   catkin_make --pkg 包名
   ```
 
-- **显示详细编译信息（调试用）**：
+- **显示详细编译信息（调试用）** ：
   ```bash
   catkin_make VERBOSE=1
   ```
 
-- **使用多线程加速编译**（例如使用 4 个 CPU 核心）：
+- **使用多线程加速编译** （例如使用 4 个 CPU 核心）：
   ```bash
   catkin_make -j4
   ```
 
-- **清理编译结果**（重新编译前可选）：
+- **清理编译结果** （重新编译前可选）：
   ```bash
   catkin_make clean
   ```
@@ -380,7 +380,7 @@ source devel/setup.bash
 ```
 
 {% note info  %}
-**建议**：将环境变量自动加载到终端中，避免每次手动 `source`：
+**建议** ：将环境变量自动加载到终端中，避免每次手动 `source` ：
 
 ```bash
 echo "source ~/Tika_ws/devel/setup.bash" >> ~/.bashrc
@@ -406,7 +406,7 @@ source ~/.bashrc
   ```
 
 - **修改了 CMakeLists.txt 或 package.xml 后不生效**  
-  通常需要重新运行 `catkin_make`，有时需先清理：
+  通常需要重新运行 `catkin_make` ，有时需先清理：
   ```bash
   catkin_make clean
   catkin_make
@@ -418,7 +418,7 @@ source ~/.bashrc
 
 ## 命令
 
-在根目录源代码文件夹下（Tika_ws/src）文件夹下运行如下命令即可创建一个名为`name_pkg`的功能包，同时该包依赖为`msgs rospy roscpp`
+在根目录源代码文件夹下（Tika_ws/src）文件夹下运行如下命令即可创建一个名为 `name_pkg` 的功能包，同时该包依赖为 `msgs rospy roscpp`
 
 ```bash
 catkin_create_pkg name_pkg std_msgs rospy roscpp
@@ -432,9 +432,9 @@ catkin_create_pkg name_pkg std_msgs rospy roscpp
      你要新建的包的名字（包名必须是小写字母、数字和下划线，不能有大写字母）。
 -   **`std_msgs` `rospy` `roscpp`**
      表示这个新包在 `package.xml` 和 `CMakeLists.txt` 里会声明对这些依赖的需求。
-    -   `std_msgs`：标准消息类型包
-    -   `rospy`：Python 版 ROS 客户端库
-    -   `roscpp`：C++ 版 ROS 客户端库
+    -   `std_msgs` ：标准消息类型包
+    -   `rospy` ：Python 版 ROS 客户端库
+    -   `roscpp` ：C++ 版 ROS 客户端库
 
 ## 运行流程
 
@@ -473,7 +473,7 @@ name_pkg
 #### **package.xml**
 
 这是 ROS 包的“说明书”，里面列出依赖。
- 找到 `<depend>` 标签位置，添加缺失的依赖，比如要加 `sensor_msgs`：
+ 找到 `<depend>` 标签位置，添加缺失的依赖，比如要加 `sensor_msgs` ：
 
 ```xml
 <depend>sensor_msgs</depend>
@@ -632,8 +632,8 @@ catkin_package(
 
 ##  .bashrc 的基本作用
 
--   位置：`~/.bashrc` （`~` 就是你的 home 目录）
--   作用：**每次启动一个新的 bash 终端时**，这个文件里的命令都会被执行。
+-   位置： `~/.bashrc` （ `~` 就是你的 home 目录）
+-   作用： **每次启动一个新的 bash 终端时** ，这个文件里的命令都会被执行。
 -   常见用途：
     1.  设置环境变量（比如 PATH、ROS 环境）
     2.  定义别名（alias）
@@ -709,8 +709,8 @@ flowchart TD
 
 ##  什么是 launch 文件？
 
--   后缀：`.launch`
--   格式：**XML**
+-   后缀： `.launch`
+-   格式： **XML**
 -   功能：批量启动 ROS 节点、设置参数、加载配置
 -   用途：
     -   一次性启动多个节点
@@ -718,7 +718,7 @@ flowchart TD
     -   指定命名空间和重映射话题
     -   更方便的实验和项目管理
 
-相当于 **一键启动脚本**。
+相当于 **一键启动脚本** 。
 
 ##  基本结构
 
@@ -741,10 +741,10 @@ launch 文件放在功能包（package）的 `launch/` 文件夹里。
 
     -   启动一个节点
     -   参数：
-        -   `pkg`：功能包名字
-        -   `type`：节点可执行文件名
-        -   `name`：节点运行时的名字
-        -   `output="screen"`：日志打印到终端
+        -   `pkg` ：功能包名字
+        -   `type` ：节点可执行文件名
+        -   `name` ：节点运行时的名字
+        -   `output="screen"` ：日志打印到终端
 
     示例：
 
@@ -806,7 +806,7 @@ cd ~/Tika_ws/src/my_robot   # 假设你的包叫 my_robot
 mkdir launch
 ```
 
-在里面新建 `turtle_demo.launch`：
+在里面新建 `turtle_demo.launch` ：
 
 ```xml
 <launch>
@@ -830,7 +830,7 @@ mkdir launch
      强制在新终端打开键盘控制，不然你没法同时动键盘和看乌龟窗口。
 
 {% note warning  %}
-如果你机器上没装 `xterm`，先装一下：
+如果你机器上没装 `xterm` ，先装一下：
 
 ```bash
 sudo apt-get install xterm
@@ -853,4 +853,4 @@ roslaunch my_robot turtle_demo.launch
 你会看到：
 
 1.  一个小乌龟窗口弹出来（乌龟在里面）
-2.  另一个终端窗口运行 `turtle_teleop_key`，你可以用键盘 `↑ ↓ ← →` 控制乌龟画图
+2.  另一个终端窗口运行 `turtle_teleop_key` ，你可以用键盘 `↑ ↓ ← →` 控制乌龟画图
