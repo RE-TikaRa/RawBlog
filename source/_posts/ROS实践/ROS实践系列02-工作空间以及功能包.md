@@ -23,9 +23,9 @@ sticky:
 
 ![catkin workspace](https://s2.loli.net/2025/10/03/eDjJWv4KawdBFRo.png)
 
-> [!TIP]
->
->  注：`build/` 和 `devel/` 目录是在你首次运行 `catkin_make` 或 `catkin build` 命令后自动生成的，不需要手动创建。 
+{% note tip  %}
+注：`build/` 和 `devel/` 目录是在你首次运行 `catkin_make` 或 `catkin build` 命令后自动生成的，不需要手动创建。 
+{% endnote %}
 
 ## 优势
 
@@ -34,21 +34,7 @@ sticky:
 >   -   **依赖管理**：通过 `package.xml` 管理包之间的依赖关系。
 >   -   **构建自动化**：使用 `CMakeLists.txt` 和 Catkin 工具链自动编译代码。
 
-<div style="
-  height: 2px;
-  background: linear-gradient(
-    to right,
-    transparent,
-    #B0A8B9 20%,
-    #C6B7B2 50%,
-    #B0A8B9 80%,
-    transparent
-  );
-  margin: 32px 0;
-  border-radius: 2px;
-  opacity: 0.85;
-  box-shadow: 0 0 6px rgba(176, 168, 185, 0.25);
-"></div>
+---
 # 工作空间常见文件与文件夹及其作用
 
 ## 工作空间根目录下的三个核心文件夹
@@ -60,9 +46,9 @@ sticky:
   - 所有你自己创建或从别人那里克隆来的 ROS 包都放在这里。
   - 包含 `CMakeLists.txt`、`package.xml` 等配置文件。
   - 也包含 `.cpp`、`.py`、`.msg`、`.launch` 等实际代码文件。
- >[!important]
- >
- >**注意**：不要手动修改 `build/` 和 `devel/`，它们是构建过程自动生成的。
+{% note warning  %}
+**注意**：不要手动修改 `build/` 和 `devel/`，它们是构建过程自动生成的。
+{% endnote %}
 
 
 ### `build/` —— 构建中间文件目录
@@ -81,14 +67,14 @@ sticky:
   
   - `setup.bash` / `setup.sh` / `setup.zsh` —— 设置当前终端环境变量（如 `ROS_PACKAGE_PATH`, `PYTHONPATH`），让系统能找到你刚编译的包。
   
- >   [!important]
- >
- >   **重要命令**：
- >
- >```bash
- >source devel/setup.bash
- >```
- >这条命令必须在每次打开新终端后运行，才能使用你编译的包。
+{% note warning  %}
+**重要命令**：
+
+```bash
+source devel/setup.bash
+```
+这条命令必须在每次打开新终端后运行，才能使用你编译的包。
+{% endnote %}
 
 ## 每个 ROS 包（如 `package2`）内部的常见结构
 
@@ -101,10 +87,9 @@ sticky:
   - 编译哪些源文件（`.cpp`）
   - 生成哪些可执行文件或库
 
- >[!tip]
- >
- > 类似于 Python 的 `setup.py` 或 C++ 项目的 `Makefile`。
- >
+{% note tip  %}
+类似于 Python 的 `setup.py` 或 C++ 项目的 `Makefile`。
+{% endnote %}
 
 
 ### package.xml
@@ -116,15 +101,13 @@ sticky:
   - 编译时依赖（`<build_depend>`）
   - 导出信息（如插件、消息类型等）
 
- >[!important]
- >
- >✅ **必须存在**，否则 ROS 无法识别这个包。
- >
+{% note warning  %}
+✅ **必须存在**，否则 ROS 无法识别这个包。
+{% endnote %}
 
- >[!tip]
- >
- >类似于 Python 的 `requirements.txt` + `setup.py` 的结合体。
- >
+{% note tip  %}
+类似于 Python 的 `requirements.txt` + `setup.py` 的结合体。
+{% endnote %}
 
 
 ## 包内的功能子目录
@@ -134,13 +117,13 @@ sticky:
 - **文件扩展名**：
   - `.py` —— Python 脚本（常用）
   - `.sh` —— Shell 脚本（用于启动程序、设置环境等）
- >[!tip]
- >
- >这些脚本可以直接在终端运行（需赋予执行权限）：
- >```bash
- >chmod +x scripts/my_script.py
- >./scripts/my_script.py
- >```
+{% note tip  %}
+这些脚本可以直接在终端运行（需赋予执行权限）：
+```bash
+chmod +x scripts/my_script.py
+./scripts/my_script.py
+```
+{% endnote %}
 
 
 ### msg/
@@ -156,10 +139,9 @@ sticky:
   ```
 - 用于在不同节点之间传递结构化数据。不同的package之间可以通过msg及其文件来沟通，交换数据。每个package相互独立，又彼此沟通。
 
- >[!important]
- >
- >使用前需在 `CMakeLists.txt` 和 `package.xml` 中声明并生成代码。
- >
+{% note warning  %}
+使用前需在 `CMakeLists.txt` 和 `package.xml` 中声明并生成代码。
+{% endnote %}
 
 
 ###  srv/
@@ -176,10 +158,9 @@ sticky:
   int32 sum
   ```
 - 用于实现“请求-响应”式通信（如调用一个服务计算两个数之和）。
- >[!important]
- >
- >使用前同样需在 `CMakeLists.txt` 声明并生成代码。
- >
+{% note warning  %}
+使用前同样需在 `CMakeLists.txt` 声明并生成代码。
+{% endnote %}
 
 
 ###  include/
@@ -197,9 +178,9 @@ sticky:
 - **用途**：
   - 实现节点的主要逻辑。
   - 通常会包含 `main()` 函数，作为可执行程序的入口。
- >[!important]
- >
- >必须在 `CMakeLists.txt` 中用 `add_executable()` 和 `target_link_libraries()` 注册才能编译。
+{% note warning  %}
+必须在 `CMakeLists.txt` 中用 `add_executable()` 和 `target_link_libraries()` 注册才能编译。
+{% endnote %}
 
 
 ### launch/
@@ -216,12 +197,12 @@ sticky:
   </launch>
   ```
 
- >[!tip]
- >
- >使用方式：
- >  ```bash
- >  roslaunch my_package my_launch_file.launch
- >  ```
+{% note tip  %}
+使用方式：
+```bash
+roslaunch my_package my_launch_file.launch
+```
+{% endnote %}
 
 
 ## 各文件/目录功能速查表
@@ -250,21 +231,7 @@ sticky:
   catkin_create_pkg my_package rospy std_msgs geometry_msgs
   ```
 
-<div style="
-  height: 2px;
-  background: linear-gradient(
-    to right,
-    transparent,
-    #B0A8B9 20%,
-    #C6B7B2 50%,
-    #B0A8B9 80%,
-    transparent
-  );
-  margin: 32px 0;
-  border-radius: 2px;
-  opacity: 0.85;
-  box-shadow: 0 0 6px rgba(176, 168, 185, 0.25);
-"></div>
+---
 # 创建一个工作空间
 
 ## 创建工程根目录
@@ -303,25 +270,11 @@ mkdir -p Tika_ws/src
 
 此时我们Tika_ws和src便可以一次创建
 
->   [!TIP]
->
->   多层建设必须要加入`-p`参数
+{% note tip  %}
+多层建设必须要加入`-p`参数
+{% endnote %}
 
-<div style="
-  height: 2px;
-  background: linear-gradient(
-    to right,
-    transparent,
-    #B0A8B9 20%,
-    #C6B7B2 50%,
-    #B0A8B9 80%,
-    transparent
-  );
-  margin: 32px 0;
-  border-radius: 2px;
-  opacity: 0.85;
-  box-shadow: 0 0 6px rgba(176, 168, 185, 0.25);
-"></div>
+---
 
 # 声明工作空间
 
@@ -363,25 +316,11 @@ catkin_init_workspace
 
 `catkin_make` 会自动检测 `src/` 是否为空，并在必要时自动完成 `catkin_init_workspace` 的工作（即生成顶层 `CMakeLists.txt`）。
 
->   [!important]
->
->   这样做的前提是：ROS 版本是 **Kinetic、Melodic 或 Noetic**（ROS Hydro / Indigo（较老版本不适用）；Kinetic 及以后可省略）
+{% note warning  %}
+这样做的前提是：ROS 版本是 **Kinetic、Melodic 或 Noetic**（ROS Hydro / Indigo（较老版本不适用）；Kinetic 及以后可省略）
+{% endnote %}
 
-<div style="
-  height: 2px;
-  background: linear-gradient(
-    to right,
-    transparent,
-    #B0A8B9 20%,
-    #C6B7B2 50%,
-    #B0A8B9 80%,
-    transparent
-  );
-  margin: 32px 0;
-  border-radius: 2px;
-  opacity: 0.85;
-  box-shadow: 0 0 6px rgba(176, 168, 185, 0.25);
-"></div>
+---
 # 编译
 
 ## 命令
@@ -440,13 +379,14 @@ catkin_make
 source devel/setup.bash
 ```
 
->[!note]
->**建议**：将环境变量自动加载到终端中，避免每次手动 `source`：
->
->```bash
->echo "source ~/Tika_ws/devel/setup.bash" >> ~/.bashrc
->source ~/.bashrc
->```
+{% note info  %}
+**建议**：将环境变量自动加载到终端中，避免每次手动 `source`：
+
+```bash
+echo "source ~/Tika_ws/devel/setup.bash" >> ~/.bashrc
+source ~/.bashrc
+```
+{% endnote %}
 
 
 
@@ -472,21 +412,7 @@ source devel/setup.bash
   catkin_make
   ```
 
-<div style="
-  height: 2px;
-  background: linear-gradient(
-    to right,
-    transparent,
-    #B0A8B9 20%,
-    #C6B7B2 50%,
-    #B0A8B9 80%,
-    transparent
-  );
-  margin: 32px 0;
-  border-radius: 2px;
-  opacity: 0.85;
-  box-shadow: 0 0 6px rgba(176, 168, 185, 0.25);
-"></div>
+---
 
 # 创建功能包
 
@@ -700,21 +626,7 @@ catkin_package(
 )
 ```
 
-<div style="
-  height: 2px;
-  background: linear-gradient(
-    to right,
-    transparent,
-    #B0A8B9 20%,
-    #C6B7B2 50%,
-    #B0A8B9 80%,
-    transparent
-  );
-  margin: 32px 0;
-  border-radius: 2px;
-  opacity: 0.85;
-  box-shadow: 0 0 6px rgba(176, 168, 185, 0.25);
-"></div>
+---
 
 # 配置文件 .bashrc
 
@@ -791,21 +703,7 @@ flowchart TD
 
 
 ```
-<div style="
-  height: 2px;
-  background: linear-gradient(
-    to right,
-    transparent,
-    #B0A8B9 20%,
-    #C6B7B2 50%,
-    #B0A8B9 80%,
-    transparent
-  );
-  margin: 32px 0;
-  border-radius: 2px;
-  opacity: 0.85;
-  box-shadow: 0 0 6px rgba(176, 168, 185, 0.25);
-"></div>
+---
 
 # launch文件
 
@@ -931,12 +829,13 @@ mkdir launch
 -   `launch-prefix="xterm -e"`
      强制在新终端打开键盘控制，不然你没法同时动键盘和看乌龟窗口。
 
->[!important]
-> 如果你机器上没装 `xterm`，先装一下：
->
->```bash
->sudo apt-get install xterm
->```
+{% note warning  %}
+如果你机器上没装 `xterm`，先装一下：
+
+```bash
+sudo apt-get install xterm
+```
+{% endnote %}
 
 
 

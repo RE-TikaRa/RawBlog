@@ -17,21 +17,7 @@ tags:
 sticky:
 ---
 
-<div style="
-  height: 2px;
-  background: linear-gradient(
-    to right,
-    transparent,
-    #B0A8B9 20%,
-    #C6B7B2 50%,
-    #B0A8B9 80%,
-    transparent
-  );
-  margin: 32px 0;
-  border-radius: 2px;
-  opacity: 0.85;
-  box-shadow: 0 0 6px rgba(176, 168, 185, 0.25);
-"></div>
+---
 
 # ROS消息与服务基础
 
@@ -61,21 +47,7 @@ sticky:
 
 话题像“持续发广播”，适合“数据流式”的持续传输；服务像“打电话问事情”，适合“我要结果再继续”的请求 - 响应场景。两者的**通信模式**和**适用场景**完全不同，是ROS中实现节点间协作的两大核心机制~
 
-<div style="
-  height: 2px;
-  background: linear-gradient(
-    to right,
-    transparent,
-    #B0A8B9 20%,
-    #C6B7B2 50%,
-    #B0A8B9 80%,
-    transparent
-  );
-  margin: 32px 0;
-  border-radius: 2px;
-  opacity: 0.85;
-  box-shadow: 0 0 6px rgba(176, 168, 185, 0.25);
-"></div>
+---
 # 消息文件.msg的编写
 
 ## **消息文件格式规范**  
@@ -133,9 +105,9 @@ sticky:
 | **字段名**    | 全小写 + 下划线分隔           | `name`, `age`, `gender`  |
 | **禁止**      | 首字母大写、驼峰式、数字开头   | ❌ `PersonName`, ❌ `1st_name` |
 
-> [!important]
->
-> **为什么？** ROS 严格要求命名规范，避免与 C++/Python 代码冲突，提高可读性。
+{% note warning  %}
+**为什么？** ROS 严格要求命名规范，避免与 C++/Python 代码冲突，提高可读性。
+{% endnote %}
 
 ### **关键注意事项**
 
@@ -344,21 +316,7 @@ int64 num
 
 ![image-20251003154414589.png](https://s2.loli.net/2025/10/03/9hGrziFcu2N3ZVS.png)
 
-<div style="
-  height: 2px;
-  background: linear-gradient(
-    to right,
-    transparent,
-    #B0A8B9 20%,
-    #C6B7B2 50%,
-    #B0A8B9 80%,
-    transparent
-  );
-  margin: 32px 0;
-  border-radius: 2px;
-  opacity: 0.85;
-  box-shadow: 0 0 6px rgba(176, 168, 185, 0.25);
-"></div>
+---
 
 # 服务文件（.srv）的编写
 
@@ -383,9 +341,9 @@ int64 b
 int64 sum
 ```
 
->   [!note]
->
->   **说明**：定义一个AddTwoInts服务，请求包含两个整数，响应返回它们的和。
+{% note info  %}
+**说明**：定义一个AddTwoInts服务，请求包含两个整数，响应返回它们的和。
+{% endnote %}
 
 #### 规范要求
 
@@ -437,10 +395,10 @@ find_package(catkin REQUIRED COMPONENTS
   )
 ```
 
->   [!note]
->
->   message_generation 对msg和srv都起作用
->
+{% note info  %}
+message_generation 对msg和srv都起作用
+{% endnote %}
+
 在上一节创建消息的步骤中已经执行过，所以会有内容。
 同样，跟msg文件类似，你也需要在CMakeLists.txt文件中做一些修改。查看上边的说明，增加额外的依赖项。删掉#，去除对下边语句的注释:
 
@@ -523,21 +481,7 @@ int64 sum
 实际操作：
 
 ![image-20251003202058180](https://s2.loli.net/2025/10/03/dZ8kwxMtY5HLqXK.png)
-<div style="
-  height: 2px;
-  background: linear-gradient(
-    to right,
-    transparent,
-    #B0A8B9 20%,
-    #C6B7B2 50%,
-    #B0A8B9 80%,
-    transparent
-  );
-  margin: 32px 0;
-  border-radius: 2px;
-  opacity: 0.85;
-  box-shadow: 0 0 6px rgba(176, 168, 185, 0.25);
-"></div>
+---
 # 消息的发布与订阅
 
 ## 编写发布节点
@@ -769,9 +713,9 @@ catkin_install_python(PROGRAMS scripts/talker.py scripts/listener.py
 
 ![image-20251003211607992](https://s2.loli.net/2025/10/03/1u6RpZAKhgNw7yL.png)
 
->   [!important]
->
->   需要注意的是`scripts/talker.py`和`scripts/listener.py`中间有一个空格
+{% note warning  %}
+需要注意的是`scripts/talker.py`和`scripts/listener.py`中间有一个空格
+{% endnote %}
 
 ## 编译节点
 
@@ -784,21 +728,7 @@ cd ~/Tika_ws
 catkin_make -j1 clean
 ```
 
-<div style="
-  height: 2px;
-  background: linear-gradient(
-    to right,
-    transparent,
-    #B0A8B9 20%,
-    #C6B7B2 50%,
-    #B0A8B9 80%,
-    transparent
-  );
-  margin: 32px 0;
-  border-radius: 2px;
-  opacity: 0.85;
-  box-shadow: 0 0 6px rgba(176, 168, 185, 0.25);
-"></div>
+---
 # 测试消息发布器和订阅器
 
 我们新建终端，运行如下命令
@@ -831,21 +761,7 @@ rosrun new_msg listener.py
 
 至此，消息的发布和订阅以全部完成。
 
-<div style="
-  height: 2px;
-  background: linear-gradient(
-    to right,
-    transparent,
-    #B0A8B9 20%,
-    #C6B7B2 50%,
-    #B0A8B9 80%,
-    transparent
-  );
-  margin: 32px 0;
-  border-radius: 2px;
-  opacity: 0.85;
-  box-shadow: 0 0 6px rgba(176, 168, 185, 0.25);
-"></div>
+---
 # ROS服务通信：编写Service和Client
 
 ## 创建Server节点
@@ -1131,20 +1047,6 @@ rosrun new_msg client.py 6 9
 
 ![image-20251003225537231](C:\Users\Tika\Desktop\万创鑫诚\培训\笔记\SdskfiWuj6vO3B8.png)
 
-<div style="
-  height: 2px;
-  background: linear-gradient(
-    to right,
-    transparent,
-    #B0A8B9 20%,
-    #C6B7B2 50%,
-    #B0A8B9 80%,
-    transparent
-  );
-  margin: 32px 0;
-  border-radius: 2px;
-  opacity: 0.85;
-  box-shadow: 0 0 6px rgba(176, 168, 185, 0.25);
-"></div>
+---
 
 # <br>The END
