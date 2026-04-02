@@ -11,7 +11,7 @@
 # 文档: https://redefine-docs.ohevan.com/basic/info
 info:
   # 站点标题
-  title: ALp_Studio Articles
+  title: ALp_Studio Blog
   # 站点副标题
   subtitle: ReStart Version
   # 作者名称
@@ -100,7 +100,7 @@ global:
   open_graph:
     enable: true
     image: https://s2.loli.net/2025/12/22/nBapAxK8NowjZFP.png  # 默认 og:image
-    description: 这是一个很无趣的人写的很无趣的文章
+    description: 这是一个很无趣的生命体写的很无趣的文章
   # Google Analytics（谷歌统计）
   google_analytics:
     enable: false # 是否启用 Google Analytics
@@ -329,7 +329,7 @@ articles:
   # 目录（TOC）设置
   toc:
     enable: true # 是否启用 TOC
-    max_depth: 3 # TOC 深度
+    max_depth: 5 # TOC 深度
     number: false # 是否自动为 TOC 添加编号
     expand: true # 是否展开 TOC
     init_open: true # 默认展开 TOC
@@ -340,11 +340,11 @@ articles:
   # 是否对图片启用懒加载
   lazyload: true
   # Pangu.js（自动在中英文之间添加空格）。见 https://github.com/vinta/pangu.js
-  pangu_js: false
+  pangu_js: true
   # 文章推荐。需要 nodejieba（npm install nodejieba），移植自 hexo-theme-volantis。
   recommendation:
     # 是否启用文章推荐
-    enable: false
+    enable: true
     # 文章推荐标题
     title: 推荐阅读
     # 最多显示文章数
@@ -411,7 +411,7 @@ footer:
   # 页脚图标：在这里填写 Font Awesome 图标 HTML
   icon: '<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>'
   # 站点开始时间，格式：YYYY/MM/DD HH:mm:ss
-  start: 2023-12-16 14:23:50
+  start: 2020-06-21 01:39:45
   # 站点统计
   statistics: true # 是否显示站点统计（文章总数、总字数）
   # 页脚文案
@@ -464,7 +464,7 @@ plugins:
       # .... 你可以在这里继续添加更多音频
   # Mermaid。需要 hexo-filter-mermaid-diagrams（npm i hexo-filter-mermaid-diagrams）。见 https://mermaid.js.org/
   mermaid:
-    enable: false # 是否启用 Mermaid
+    enable: true # 是否启用 Mermaid
     version: "11.4.1" # 默认 v11.4.1
 # 插件 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 结束
 
