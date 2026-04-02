@@ -344,7 +344,7 @@ articles:
   # 文章推荐。需要 nodejieba（npm install nodejieba），移植自 hexo-theme-volantis。
   recommendation:
     # 是否启用文章推荐
-    enable: true
+    enable: false
     # 文章推荐标题
     title: 推荐阅读
     # 最多显示文章数
