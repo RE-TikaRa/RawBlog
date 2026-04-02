@@ -7,7 +7,6 @@ categories:
   - Project
 abbrlink: 6c20921f
 thumbnail: "https://s2.loli.net/2025/12/22/nBapAxK8NowjZFP.png"
-sticky:
 excerpt: "奖项管理平台"
 banner: "https://s2.loli.net/2025/12/22/uBnZDzxcI7JHCX3.png"
 expires: 2028-01-03 00:01:16

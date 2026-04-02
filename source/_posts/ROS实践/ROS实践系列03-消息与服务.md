@@ -10,7 +10,6 @@ categories:
   - ROS实践
 abbrlink: d418d54e
 thumbnail: "https://s2.loli.net/2025/12/22/nBapAxK8NowjZFP.png"
-sticky:
 excerpt: "详解 ROS 消息与服务机制，实践 .msg/.srv 编写、发布订阅与服务通信"
 banner: "https://s2.loli.net/2025/12/22/uBnZDzxcI7JHCX3.png"
 expires: 2028-03-15 18:27:11

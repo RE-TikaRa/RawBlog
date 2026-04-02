@@ -8,7 +8,6 @@ categories:
   - Linux基础
 abbrlink: d51e69ff
 thumbnail: "https://s2.loli.net/2025/12/22/nBapAxK8NowjZFP.png"
-sticky:
 excerpt: "给VIM的使用方法留一个存档"
 banner: "https://s2.loli.net/2025/12/22/uBnZDzxcI7JHCX3.png"
 expires: 2031-02-10 23:40:18

@@ -9,7 +9,6 @@ categories:
   - Motions Rules
 abbrlink: 28822
 thumbnail: "https://s2.loli.net/2025/12/22/nBapAxK8NowjZFP.png"
-sticky: 2
 excerpt: "这是文章摘要 This is the excerpt of the post"
 banner: "https://s2.loli.net/2025/12/22/uBnZDzxcI7JHCX3.png"
 expires: 2028-12-14 00:38:40

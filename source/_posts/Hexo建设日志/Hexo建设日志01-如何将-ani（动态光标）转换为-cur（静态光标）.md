@@ -7,7 +7,6 @@ categories:
   - Hexo建设日志
 abbrlink: 54966
 thumbnail: "https://s2.loli.net/2025/12/22/nBapAxK8NowjZFP.png"
-sticky:
 excerpt: "这是文章摘要 This is the excerpt of the post"
 banner: "https://s2.loli.net/2025/12/22/uBnZDzxcI7JHCX3.png"
 expires: 2025-12-11 12:46:41

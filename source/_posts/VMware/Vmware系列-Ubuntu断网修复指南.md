@@ -8,7 +8,6 @@ categories:
   - VMware
 abbrlink: '40349006'
 thumbnail: "https://s2.loli.net/2025/12/22/nBapAxK8NowjZFP.png"
-sticky:
 excerpt: "对于VMware下Ubuntu断网的几种修复方式"
 banner: "https://s2.loli.net/2025/12/22/uBnZDzxcI7JHCX3.png"
 expires: 2028-02-12 20:50:43

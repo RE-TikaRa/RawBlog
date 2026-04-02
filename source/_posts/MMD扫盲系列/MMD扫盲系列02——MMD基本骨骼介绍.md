@@ -7,7 +7,6 @@ categories:
   - MMD扫盲系列
 abbrlink: 7639a586
 thumbnail: "https://s2.loli.net/2025/12/22/nBapAxK8NowjZFP.png"
-sticky:
 excerpt: "这是文章摘要 This is the excerpt of the post"
 banner: "https://s2.loli.net/2025/12/22/uBnZDzxcI7JHCX3.png"
 expires: 2029-07-23 22:53:37

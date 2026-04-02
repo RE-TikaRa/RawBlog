@@ -9,7 +9,6 @@ categories:
   - Motion DL
 abbrlink: 10590
 thumbnail: "https://s2.loli.net/2025/12/22/nBapAxK8NowjZFP.png"
-sticky:
 excerpt: "这是文章摘要 This is the excerpt of the post"
 banner: "https://s2.loli.net/2025/12/22/uBnZDzxcI7JHCX3.png"
 expires: 9999-12-31 23:59:59

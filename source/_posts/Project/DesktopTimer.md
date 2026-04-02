@@ -9,7 +9,6 @@ categories:
   - Project
 abbrlink: '0'
 thumbnail: "https://s2.loli.net/2025/12/22/nBapAxK8NowjZFP.png"
-sticky:
 excerpt: "这是文章摘要 This is the excerpt of the post"
 banner: "https://s2.loli.net/2025/12/22/uBnZDzxcI7JHCX3.png"
 expires: 2028-01-03 03:48:09

@@ -8,7 +8,6 @@ categories:
   - Linux基础
 abbrlink: 83c08d17
 thumbnail: "https://s2.loli.net/2025/12/22/nBapAxK8NowjZFP.png"
-sticky:
 excerpt: "NANO使用方法"
 banner: "https://s2.loli.net/2025/12/22/uBnZDzxcI7JHCX3.png"
 expires: 2031-02-10 23:50:52

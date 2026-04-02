@@ -7,7 +7,6 @@ categories:
   - Latex
 abbrlink: 828fd9e
 thumbnail: "https://s2.loli.net/2025/12/22/nBapAxK8NowjZFP.png"
-sticky:
 excerpt: "LaTeX学习日志01-前期准备 包括安装，环境配置等"
 banner: "https://s2.loli.net/2025/12/22/uBnZDzxcI7JHCX3.png"
 expires: 2027-12-27 07:54:10

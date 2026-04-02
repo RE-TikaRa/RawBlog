@@ -8,7 +8,6 @@ categories:
   - Vlook
 abbrlink: 8443937e
 thumbnail: "https://s2.loli.net/2025/12/22/nBapAxK8NowjZFP.png"
-sticky:
 excerpt: "Typora Vlook 系列主题的GitHub Pages在线部署教程"
 banner: "https://s2.loli.net/2025/12/22/uBnZDzxcI7JHCX3.png"
 expires: 2028-02-10 00:58:09

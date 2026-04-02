@@ -10,7 +10,6 @@ categories:
   - ROS实践
 abbrlink: bc930edf
 thumbnail: "https://s2.loli.net/2025/12/22/nBapAxK8NowjZFP.png"
-sticky:
 excerpt: "从工作空间结构到 catkin 编译与功能包创建，完整梳理 ROS 开发基础流程"
 banner: "https://s2.loli.net/2025/12/22/uBnZDzxcI7JHCX3.png"
 expires: 2028-03-15 18:25:13

@@ -9,7 +9,6 @@ categories:
   - ROS实践
 abbrlink: aee7723c
 thumbnail: "https://s2.loli.net/2025/12/22/nBapAxK8NowjZFP.png"
-sticky:
 excerpt: "安装并配置虚拟机以及Ubuntu"
 banner: "https://s2.loli.net/2025/12/22/uBnZDzxcI7JHCX3.png"
 expires: 2028-03-15 18:21:30
