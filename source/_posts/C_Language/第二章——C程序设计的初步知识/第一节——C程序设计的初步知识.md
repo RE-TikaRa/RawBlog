@@ -1,17 +1,22 @@
 ---
 title: 第二章——C程序设计的初步知识 第一节——C程序设计的初步知识
+date: 2026-02-07 02:21:28
 tags:
   - C Language
 categories:
   - C_Language
   - 第二章——C程序设计的初步知识
-thumbnail: 'https://s2.loli.net/2025/12/22/nBapAxK8NowjZFP.png'
-excerpt: 这是文章摘要 This is the excerpt of the post
-banner: 'https://s2.loli.net/2025/12/22/uBnZDzxcI7JHCX3.png'
 abbrlink: e6bd15ca
-date: 2026-02-07 02:21:28
-expires: 9999-12-31 23:59:59
+thumbnail: "https://s2.loli.net/2025/12/22/nBapAxK8NowjZFP.png"
 sticky:
+excerpt: "这是文章摘要 This is the excerpt of the post"
+banner: "https://s2.loli.net/2025/12/22/uBnZDzxcI7JHCX3.png"
+expires: 2031-02-07 02:21:28
+password: ""
+abstract: 有东西被加密了, 请输入密码查看.
+message: 您好, 这里需要密码.
+wrong_pass_message: 抱歉, 这个密码看着不太对, 请再试试.
+wrong_hash_message: 抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.
 ---
 # 一、第一个程序 Hello, World!
 &emsp;&emsp;“Hello, World!”不仅是编程教学的起点，更是连接技术、文化与历史的纽带。它见证了编程语言的演变、开发工具的进步，以及程序员社区的集体智慧。正如前人所述：“所有编程者学习编程的第一步就在于此”，它的地位无可替代，是每位开发者共同的“编程成人礼”。既如此，让我们来看看 C 语言中的第一步要如何编写。

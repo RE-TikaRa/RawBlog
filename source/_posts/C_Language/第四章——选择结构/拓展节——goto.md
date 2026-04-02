@@ -1,17 +1,22 @@
 ---
 title: 第四章——选择结构 拓展节——goto
+date: 2026-02-07 02:21:28
 tags:
   - C Language
 categories:
   - C_Language
   - 第四章——选择结构
-thumbnail: 'https://s2.loli.net/2025/12/22/nBapAxK8NowjZFP.png'
-excerpt: 这是文章摘要 This is the excerpt of the post
-banner: 'https://s2.loli.net/2025/12/22/uBnZDzxcI7JHCX3.png'
 abbrlink: c6ad4934
-date: 2026-02-07 02:21:28
-expires: 9999-12-31 23:59:59
+thumbnail: "https://s2.loli.net/2025/12/22/nBapAxK8NowjZFP.png"
 sticky:
+excerpt: "这是文章摘要 This is the excerpt of the post"
+banner: "https://s2.loli.net/2025/12/22/uBnZDzxcI7JHCX3.png"
+expires: 2031-02-07 02:21:28
+password: ""
+abstract: 有东西被加密了, 请输入密码查看.
+message: 您好, 这里需要密码.
+wrong_pass_message: 抱歉, 这个密码看着不太对, 请再试试.
+wrong_hash_message: 抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.
 ---
 # 1. 什么是`goto`？
 &emsp;&emsp;`goto`是C语言中一个“跳转指令”，它就像你在代码里插了一个书签，然后直接跳到那个书签的位置继续执行。  

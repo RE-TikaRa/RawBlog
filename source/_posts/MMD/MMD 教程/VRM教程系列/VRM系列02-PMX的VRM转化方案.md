@@ -1,14 +1,24 @@
 ---
 title: VRM系列02-PMX的VRM转化方案
+date: 2024-06-09 10:57:59
+tags:
+  - PMX
+  - VRM
 categories:
   - MMD
   - MMD 教程
   - VRM教程系列
 abbrlink: 93a98ac8
-date: 2024-06-09 10:57:59
-tags: 
-  - PMX
-  - VRM
+thumbnail: "https://s2.loli.net/2025/12/22/nBapAxK8NowjZFP.png"
+sticky:
+excerpt: "这是文章摘要 This is the excerpt of the post"
+banner: "https://s2.loli.net/2025/12/22/uBnZDzxcI7JHCX3.png"
+expires: 2026-06-09 10:57:59
+password: ""
+abstract: 有东西被加密了, 请输入密码查看.
+message: 您好, 这里需要密码.
+wrong_pass_message: 抱歉, 这个密码看着不太对, 请再试试.
+wrong_hash_message: 抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.
 ---
 ## 前言
 &emsp;&emsp;是我习惯性的PMX转为VRM方案，用到了Unity，虽然有人说Blender插件也能做，但是我不习惯用Blender，于是用了Unity。本教程基于Windows10系统，不同系统或是软件版本间差异请自行百度，同时，此教程是我个人的方案展示，请自行斟酌是否适用。 ***还有就是，请一定要遵守原作者的RM！！！！！***

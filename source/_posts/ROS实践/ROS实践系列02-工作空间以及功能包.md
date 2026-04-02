@@ -1,20 +1,24 @@
 ---
 title: ROS实践系列02-工作空间以及功能包
-thumbnail: 'https://s2.loli.net/2025/12/22/nBapAxK8NowjZFP.png'
-excerpt: 从工作空间结构到 catkin 编译与功能包创建，完整梳理 ROS 开发基础流程
-banner: 'https://s2.loli.net/2025/12/22/uBnZDzxcI7JHCX3.png'
-password: ''
-abstract: '有东西被加密了, 请输入密码查看.'
-message: '您好, 这里需要密码.'
-wrong_pass_message: '抱歉, 这个密码看着不太对, 请再试试.'
-wrong_hash_message: '抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.'
-expires: '10000-01-01 07:59:59'
+date: 2026-03-15 18:25:13
+tags:
+  - ROS
+  - ROS实践
+  - 工作空间
+  - 功能包
 categories:
   - ROS实践
 abbrlink: bc930edf
-date: 2026-03-15 18:25:13
-tags:
+thumbnail: "https://s2.loli.net/2025/12/22/nBapAxK8NowjZFP.png"
 sticky:
+excerpt: "从工作空间结构到 catkin 编译与功能包创建，完整梳理 ROS 开发基础流程"
+banner: "https://s2.loli.net/2025/12/22/uBnZDzxcI7JHCX3.png"
+expires: 2028-03-15 18:25:13
+password: ""
+abstract: 有东西被加密了, 请输入密码查看.
+message: 您好, 这里需要密码.
+wrong_pass_message: 抱歉, 这个密码看着不太对, 请再试试.
+wrong_hash_message: 抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.
 ---
 
 # 工作空间

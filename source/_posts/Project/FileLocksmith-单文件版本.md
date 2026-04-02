@@ -1,21 +1,21 @@
 ---
 title: FileLocksmith-单文件版本
-thumbnail: 'https://s2.loli.net/2025/12/22/nBapAxK8NowjZFP.png'
-excerpt: File Locksmith 是用于定位并解除文件/文件夹占用的工具。但是微软是以PowerToys工具集方式提供，直接用的话感觉要下一整个工具集太麻烦。
-banner: 'https://s2.loli.net/2025/12/22/uBnZDzxcI7JHCX3.png'
-password: ''
-abstract: '有东西被加密了, 请输入密码查看.'
-message: '您好, 这里需要密码.'
-wrong_pass_message: '抱歉, 这个密码看着不太对, 请再试试.'
-wrong_hash_message: '抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.'
-expires: '10000-01-01 07:59:59'
+date: 2026-01-29 16:10:56
 tags:
   - project
 categories:
   - Project
 abbrlink: 5d98e7ac
-date: 2026-01-29 16:10:56
+thumbnail: "https://s2.loli.net/2025/12/22/nBapAxK8NowjZFP.png"
 sticky:
+excerpt: "File Locksmith 是用于定位并解除文件/文件夹占用的工具。但是微软是以PowerToys工具集方式提供，直接用的话感觉要下一整个工具集太麻烦。"
+banner: "https://s2.loli.net/2025/12/22/uBnZDzxcI7JHCX3.png"
+expires: 2028-01-29 16:10:56
+password: ""
+abstract: 有东西被加密了, 请输入密码查看.
+message: 您好, 这里需要密码.
+wrong_pass_message: 抱歉, 这个密码看着不太对, 请再试试.
+wrong_hash_message: 抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.
 ---
 
 

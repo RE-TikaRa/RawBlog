@@ -1,12 +1,22 @@
 ---
 title: APK技术日常02-APK源码的查看
+date: 2024-01-08 15:04:26
 tags:
   - APK
   - 技术日常
 categories:
   - APK修改系列
 abbrlink: 64111
-date: 2024-01-08 15:04:26
+thumbnail: "https://s2.loli.net/2025/12/22/nBapAxK8NowjZFP.png"
+sticky:
+excerpt: "这是文章摘要 This is the excerpt of the post"
+banner: "https://s2.loli.net/2025/12/22/uBnZDzxcI7JHCX3.png"
+expires: 2026-01-08 15:04:26
+password: ""
+abstract: 有东西被加密了, 请输入密码查看.
+message: 您好, 这里需要密码.
+wrong_pass_message: 抱歉, 这个密码看着不太对, 请再试试.
+wrong_hash_message: 抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.
 ---
 # 前言
 ***&emsp;&emsp;代码设计是每位工程师心血的结晶，源代码的查看仅能作为学习使用，不可以不劳而获。***

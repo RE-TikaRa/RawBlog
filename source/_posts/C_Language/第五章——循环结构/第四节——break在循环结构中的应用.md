@@ -1,17 +1,22 @@
 ---
 title: 第五章——循环结构 第四节——break在循环结构中的应用
+date: 2026-02-07 02:21:28
 tags:
   - C Language
 categories:
   - C_Language
   - 第五章——循环结构
-thumbnail: 'https://s2.loli.net/2025/12/22/nBapAxK8NowjZFP.png'
-excerpt: 这是文章摘要 This is the excerpt of the post
-banner: 'https://s2.loli.net/2025/12/22/uBnZDzxcI7JHCX3.png'
 abbrlink: 9c79d42
-date: 2026-02-07 02:21:28
-expires: 9999-12-31 23:59:59
+thumbnail: "https://s2.loli.net/2025/12/22/nBapAxK8NowjZFP.png"
 sticky:
+excerpt: "这是文章摘要 This is the excerpt of the post"
+banner: "https://s2.loli.net/2025/12/22/uBnZDzxcI7JHCX3.png"
+expires: 2031-02-07 02:21:28
+password: ""
+abstract: 有东西被加密了, 请输入密码查看.
+message: 您好, 这里需要密码.
+wrong_pass_message: 抱歉, 这个密码看着不太对, 请再试试.
+wrong_hash_message: 抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.
 ---
 # 1. break 是什么？——「紧急逃生门」
 &emsp;&emsp;想象你在玩一个闯关游戏，突然遇到一个死循环的迷宫，每次走到某个路口就会重复绕圈。这时，你发动神祈技能，将自我瞬间传送到迷宫出口——这就是 `break` 的作用。  

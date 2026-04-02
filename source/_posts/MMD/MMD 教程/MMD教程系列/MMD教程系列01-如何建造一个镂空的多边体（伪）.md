@@ -1,12 +1,23 @@
 ---
 title: MMD教程系列01-如何建造一个镂空的多边体
-tags: MMD
+date: 2024-01-25 01:25:34
+tags:
+  - MMD
 categories:
   - MMD
   - MMD 教程
   - MMD教程系列
 abbrlink: 14648
-date: 2024-01-25 01:25:34
+thumbnail: "https://s2.loli.net/2025/12/22/nBapAxK8NowjZFP.png"
+sticky:
+excerpt: "这是文章摘要 This is the excerpt of the post"
+banner: "https://s2.loli.net/2025/12/22/uBnZDzxcI7JHCX3.png"
+expires: 2026-01-25 01:25:34
+password: ""
+abstract: 有东西被加密了, 请输入密码查看.
+message: 您好, 这里需要密码.
+wrong_pass_message: 抱歉, 这个密码看着不太对, 请再试试.
+wrong_hash_message: 抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.
 ---
 # 前言：
 &emsp;&emsp;最近在到处水群的时候，看到了一位热衷于复刻PJSK的MV的群友[诺耶耶](https://space.bilibili.com/104696950)。在做MMD的时候遇到了一些小问题，所以我去试了试，然后感觉还不错，然后写了这个做镂空多边体的教程。请注意，此处并不是真正意义上的镂空，而是伪造的，所以当你使用某些会把透明通道关闭的渲染时，会穿帮。

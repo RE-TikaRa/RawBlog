@@ -1,17 +1,22 @@
 ---
 title: 第五章——循环结构 第一节——while语句和do...while结构
+date: 2026-02-07 02:21:28
 tags:
   - C Language
 categories:
   - C_Language
   - 第五章——循环结构
-thumbnail: 'https://s2.loli.net/2025/12/22/nBapAxK8NowjZFP.png'
-excerpt: 这是文章摘要 This is the excerpt of the post
-banner: 'https://s2.loli.net/2025/12/22/uBnZDzxcI7JHCX3.png'
 abbrlink: d9e67466
-date: 2026-02-07 02:21:28
-expires: 9999-12-31 23:59:59
+thumbnail: "https://s2.loli.net/2025/12/22/nBapAxK8NowjZFP.png"
 sticky:
+excerpt: "这是文章摘要 This is the excerpt of the post"
+banner: "https://s2.loli.net/2025/12/22/uBnZDzxcI7JHCX3.png"
+expires: 2031-02-07 02:21:28
+password: ""
+abstract: 有东西被加密了, 请输入密码查看.
+message: 您好, 这里需要密码.
+wrong_pass_message: 抱歉, 这个密码看着不太对, 请再试试.
+wrong_hash_message: 抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.
 ---
 # 一、while语句：谨慎派的「先问路再出发」
 ## 1.1 基本语法与执行逻辑

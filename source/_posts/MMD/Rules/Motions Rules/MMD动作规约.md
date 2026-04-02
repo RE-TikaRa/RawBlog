@@ -1,13 +1,23 @@
 ---
 title: MMD动作规约/MMD Motion Rules
-tags: Rules
+date: 2023-12-14 00:38:40
+tags:
+  - Rules
 categories:
   - MMD
   - Rules
   - Motions Rules
-top: 2
 abbrlink: 28822
-date: 2023-12-14 00:38:40
+thumbnail: "https://s2.loli.net/2025/12/22/nBapAxK8NowjZFP.png"
+sticky: 2
+excerpt: "这是文章摘要 This is the excerpt of the post"
+banner: "https://s2.loli.net/2025/12/22/uBnZDzxcI7JHCX3.png"
+expires: 2028-12-14 00:38:40
+password: ""
+abstract: 有东西被加密了, 请输入密码查看.
+message: 您好, 这里需要密码.
+wrong_pass_message: 抱歉, 这个密码看着不太对, 请再试试.
+wrong_hash_message: 抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.
 ---
 # 前言：
 &emsp;&emsp;***欢迎各位使用动作数据<br>&emsp;&emsp;本动作源于游戏&emsp;[《世界计划 彩色舞台 feat. 初音未来》](https://pjsekai.sega.jp/)，故日语用户请谨慎使用。***

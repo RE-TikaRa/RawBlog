@@ -1,12 +1,22 @@
 ---
 title: APK技术日常03—APK的再打包与签名
-categories:
-  - APK修改系列
-abbrlink: 15022
+date: 2024-01-11 00:57:59
 tags:
   - APK
   - 技术日常
-date: 2024-01-11 00:57:59
+categories:
+  - APK修改系列
+abbrlink: 15022
+thumbnail: "https://s2.loli.net/2025/12/22/nBapAxK8NowjZFP.png"
+sticky:
+excerpt: "这是文章摘要 This is the excerpt of the post"
+banner: "https://s2.loli.net/2025/12/22/uBnZDzxcI7JHCX3.png"
+expires: 2026-01-11 00:57:59
+password: ""
+abstract: 有东西被加密了, 请输入密码查看.
+message: 您好, 这里需要密码.
+wrong_pass_message: 抱歉, 这个密码看着不太对, 请再试试.
+wrong_hash_message: 抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.
 ---
 # 前言
 ***&emsp;&emsp;此处的apk的再打包是指之前教程中所拆解出来的apk文件的打包，如果是自己做的文件，不确定是否适用。而签名则是相当于对apk文件的认证，不签名则无法安装。***

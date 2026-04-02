@@ -1,12 +1,23 @@
 ---
 title: MME教程系列01—AutoLuminous4的超详细使用教程
-tags: MME
+date: 2024-01-30 23:44:18
+tags:
+  - MME
 categories:
   - MMD
   - MMD 教程
   - MME教程系列
 abbrlink: 6e81bfe7
-date: 2024-01-30 23:44:18
+thumbnail: "https://s2.loli.net/2025/12/22/nBapAxK8NowjZFP.png"
+sticky:
+excerpt: "这是文章摘要 This is the excerpt of the post"
+banner: "https://s2.loli.net/2025/12/22/uBnZDzxcI7JHCX3.png"
+expires: 2026-01-30 23:44:18
+password: ""
+abstract: 有东西被加密了, 请输入密码查看.
+message: 您好, 这里需要密码.
+wrong_pass_message: 抱歉, 这个密码看着不太对, 请再试试.
+wrong_hash_message: 抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.
 ---
 # 前言
 &emsp;&emsp;我又来了，这次是AutoLuminous4的超详细用法！比B站那个还详细（确信）在这里写写，然后我就不发到B站了，大致看看吧。然后就是，其实在这里写到的所有效果，在そぼろ的ReadMe文件中都有写到。

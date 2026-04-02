@@ -1,10 +1,21 @@
 ---
 title: MMD扫盲系列02——MMD基本骨骼介绍
-tags: MMD扫盲系列
+date: 2024-07-23 22:53:37
+tags:
+  - MMD扫盲系列
 categories:
   - MMD扫盲系列
 abbrlink: 7639a586
-date: 2024-07-23 22:53:37
+thumbnail: "https://s2.loli.net/2025/12/22/nBapAxK8NowjZFP.png"
+sticky:
+excerpt: "这是文章摘要 This is the excerpt of the post"
+banner: "https://s2.loli.net/2025/12/22/uBnZDzxcI7JHCX3.png"
+expires: 2029-07-23 22:53:37
+password: ""
+abstract: 有东西被加密了, 请输入密码查看.
+message: 您好, 这里需要密码.
+wrong_pass_message: 抱歉, 这个密码看着不太对, 请再试试.
+wrong_hash_message: 抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.
 ---
 
 # 前言

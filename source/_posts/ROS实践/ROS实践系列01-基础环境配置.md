@@ -1,20 +1,23 @@
 ---
 title: ROS实践系列01-基础环境配置
-thumbnail: 'https://s2.loli.net/2025/12/22/nBapAxK8NowjZFP.png'
-excerpt: 安装并配置虚拟机以及Ubuntu
-banner: 'https://s2.loli.net/2025/12/22/uBnZDzxcI7JHCX3.png'
-password: ''
-abstract: '有东西被加密了, 请输入密码查看.'
-message: '您好, 这里需要密码.'
-wrong_pass_message: '抱歉, 这个密码看着不太对, 请再试试.'
-wrong_hash_message: '抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.'
-expires: '10000-01-01 07:59:59'
+date: 2026-03-15 18:21:30
+tags:
+  - ROS
+  - ROS实践
+  - 基础环境配置
 categories:
   - ROS实践
 abbrlink: aee7723c
-date: 2026-03-15 18:21:30
-tags:
+thumbnail: "https://s2.loli.net/2025/12/22/nBapAxK8NowjZFP.png"
 sticky:
+excerpt: "安装并配置虚拟机以及Ubuntu"
+banner: "https://s2.loli.net/2025/12/22/uBnZDzxcI7JHCX3.png"
+expires: 2028-03-15 18:21:30
+password: ""
+abstract: 有东西被加密了, 请输入密码查看.
+message: 您好, 这里需要密码.
+wrong_pass_message: 抱歉, 这个密码看着不太对, 请再试试.
+wrong_hash_message: 抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.
 ---
 
 # 安装VMware Workstation

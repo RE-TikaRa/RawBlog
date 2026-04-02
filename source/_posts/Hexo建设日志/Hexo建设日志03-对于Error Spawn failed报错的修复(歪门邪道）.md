@@ -1,10 +1,21 @@
 ---
 title: Hexo建设日志03-对于Error Spawn failed报错的修复（歪门邪道）
-tags: Hexo建设日志
+date: 2024-01-21 11:38:55
+tags:
+  - Hexo建设日志
 categories:
   - Hexo建设日志
 abbrlink: 39589
-date: 2024-01-21 11:38:55
+thumbnail: "https://s2.loli.net/2025/12/22/nBapAxK8NowjZFP.png"
+sticky:
+excerpt: "这是文章摘要 This is the excerpt of the post"
+banner: "https://s2.loli.net/2025/12/22/uBnZDzxcI7JHCX3.png"
+expires: 2026-01-21 11:38:55
+password: ""
+abstract: 有东西被加密了, 请输入密码查看.
+message: 您好, 这里需要密码.
+wrong_pass_message: 抱歉, 这个密码看着不太对, 请再试试.
+wrong_hash_message: 抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.
 ---
 # 前言：
 &emsp;&emsp;最近被Error:Spawn failed这个报错，折磨得一塌糊涂。试了试网上的，什么删除.deploy_git文件夹，什么改_config.yml里面的deploy:repo的git@github.com:，还有本地推送啥的，对我都没作用。试了试一个偏方。在这把方法分享一下。

@@ -1,22 +1,22 @@
 ---
 title: Linux基础-NANO使用方法
-thumbnail: 'https://s2.loli.net/2025/12/22/nBapAxK8NowjZFP.png'
-excerpt: NANO使用方法
-banner: 'https://s2.loli.net/2025/12/22/uBnZDzxcI7JHCX3.png'
-password: ''
-abstract: '有东西被加密了, 请输入密码查看.'
-message: '您好, 这里需要密码.'
-wrong_pass_message: '抱歉, 这个密码看着不太对, 请再试试.'
-wrong_hash_message: '抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.'
-expires: '10000-01-01 07:59:59'
+date: 2026-02-10 23:50:52
 tags:
   - Linux
   - NANO
 categories:
   - Linux基础
 abbrlink: 83c08d17
-date: 2026-02-10 23:50:52
+thumbnail: "https://s2.loli.net/2025/12/22/nBapAxK8NowjZFP.png"
 sticky:
+excerpt: "NANO使用方法"
+banner: "https://s2.loli.net/2025/12/22/uBnZDzxcI7JHCX3.png"
+expires: 2031-02-10 23:50:52
+password: ""
+abstract: 有东西被加密了, 请输入密码查看.
+message: 您好, 这里需要密码.
+wrong_pass_message: 抱歉, 这个密码看着不太对, 请再试试.
+wrong_hash_message: 抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.
 ---
 
 ## 简介

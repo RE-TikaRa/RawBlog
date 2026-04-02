@@ -1,13 +1,23 @@
 ---
 title: MMD模型规约/MMD Model Rules
-tags: Rules
-top: 2
+date: 2023-12-14 00:19:33
+tags:
+  - Rules
 categories:
   - MMD
   - Rules
   - Model Rules
 abbrlink: 49097
-date: 2023-12-14 00:19:33
+thumbnail: "https://s2.loli.net/2025/12/22/nBapAxK8NowjZFP.png"
+sticky: 2
+excerpt: "这是文章摘要 This is the excerpt of the post"
+banner: "https://s2.loli.net/2025/12/22/uBnZDzxcI7JHCX3.png"
+expires: 2028-12-14 00:19:33
+password: ""
+abstract: 有东西被加密了, 请输入密码查看.
+message: 您好, 这里需要密码.
+wrong_pass_message: 抱歉, 这个密码看着不太对, 请再试试.
+wrong_hash_message: 抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.
 ---
 # 前言
 ***&emsp;&emsp;此为ALp Studio的在线版ReadMe。如果和离线版有差异，一切以在线版本为准。***
