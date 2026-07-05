@@ -151,9 +151,9 @@ sudo systemctl start NetworkManager
 sudo reboot
 ```
 
-{% notel blue 情况解析：NetworkManager 未接管 %}
+{% callout type="blue" title="情况解析：NetworkManager 未接管" %}
 问题的核心在于让 NetworkManager 重新接管虚拟以太网卡并重建设备状态。很多“断网”现象并非驱动失效，而是网络接口被错误标记为“不受管理”（unmanaged），导致 DHCP 获取 IP 与路由下发流程无法执行。
-{% endnotel %}
+{% endcallout %}
 
 ## 情况三：配置静态 IP (桥接模式)
 

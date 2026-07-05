@@ -176,14 +176,14 @@ home_banner:
     style: default # default（默认）, reverse（反转）, center（居中）
     # 链接列表
     links:
-      github: https://github.com/RE-TikaRa
-      bilibili: https://space.bilibili.com/374412219
-      email: 163mail@re-tikara.fun # 你的邮箱
-      # ...... # 你可以继续添加更多
+      - icon: github
+        url: https://github.com/RE-TikaRa
+      - icon: bilibili
+        url: https://space.bilibili.com/374412219
+      - icon: email
+        url: 163mail@re-tikara.fun # 你的邮箱
     # 带二维码抽屉的社交链接
-    qrs:
-      weixin:  # 你的微信二维码图片 URL
-      # ...... # 你可以继续添加更多
+    qrs: []
 # 首页横幅 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 结束
 
 
